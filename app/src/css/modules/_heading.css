@@ -1,19 +1,48 @@
 .heading {
   font-family: 'NIGHTMARE PILLS';
-  font-size: 44px;
+  font-size: 36px;
   text-align: center;
   line-height: 42px;
+
+  &--small {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+
+  &--left {
+    text-align: left;
+    margin-left: 5%;
+  }
+
+  &--large {
+    font-size: 44px;
+  }
+
+  &--white {
+    color: #D8D8D8;
+    -webkit-text-stroke: 0.5px rgba(90, 90, 90, 0.5);
+  }
 
   &--black {
     color: #303030;
     -webkit-text-stroke: 0.5px rgba(90, 90, 90, 0.5);
   }
   &--red {
+    color: #A44D4D;
+  }
+  &--dark-red {
     color: #852222;
     -webkit-text-stroke: 0.5px rgba(133, 34, 34, 0.5);
+  }
+  &--bright {
+    color: #EEEEEE;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
   }
 
   &--block {
     display: block;
+  }
+  &--margin {
+    margin: 50px auto 30px auto;
   }
 }

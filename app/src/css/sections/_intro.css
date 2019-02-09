@@ -1,0 +1,9 @@
+.intro {
+
+  &__image {
+    display: block;
+    width: 80%;
+    margin: 50px auto -25px auto;
+    box-shadow: 18px 18px 0px -3px rgba(0, 0, 0, 0.75), -15px -15px 0px -10px rgba(0, 0, 0, 1);
+  }
+}

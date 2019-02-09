@@ -1,0 +1,22 @@
+.skirmishes {
+  background-color: var(--main-black);
+  padding-top: 30px;
+  position: relative;
+
+  &__section {
+    background-color: var(--main-red);
+    margin-top: 50px;
+    padding: 6px 0px;
+    box-shadow: -5px -5px 6px rgba(81, 81, 81, 0.5);
+  }
+
+  &__image {
+    display: block;
+    width: 95%;
+  }
+
+  &__quote {
+    position: absolute;
+    bottom: 60px;
+  }
+}

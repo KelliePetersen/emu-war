@@ -1,0 +1,17 @@
+.cause-of-war {
+  background-color: var(--main-black);
+  position: relative;
+  z-index: -1;
+  padding-top: 50px;
+
+  &__image {
+    display: block;
+  }
+
+  &__section {
+    position: absolute;
+    background-color: var(--main-red);
+    padding: 6px 0px;
+    bottom: 30px;
+  }
+}

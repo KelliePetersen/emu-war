@@ -1,0 +1,12 @@
+.public-outcry {
+  &__section {
+    background-color: var(--main-red);
+    margin-top: 40px;
+    padding-top: 35px;
+  }
+
+  &__image {
+    display: block;
+    max-width: 170%;
+  }
+}

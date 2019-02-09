@@ -377,6 +377,7 @@ template {
   --heading-white: #D8D8D8;
   --heading-red: #6F171A;
   --main-red: #A24D4D;
+  --main-black: #252525;
 }
 
 body {
@@ -454,7 +455,7 @@ img {
     margin: 10px;
     background-color: #FCFCFC;
     border-radius: 50px;
-    box-shadow: black;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
   }
 
 .nav__list {
@@ -470,10 +471,29 @@ img {
 
 .heading {
   font-family: 'NIGHTMARE PILLS';
-  font-size: 44px;
+  font-size: 36px;
   text-align: center;
   line-height: 42px;
 }
+
+.heading--small {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+
+.heading--left {
+    text-align: left;
+    margin-left: 5%;
+  }
+
+.heading--large {
+    font-size: 44px;
+  }
+
+.heading--white {
+    color: #D8D8D8;
+    -webkit-text-stroke: 0.5px rgba(90, 90, 90, 0.5);
+  }
 
 .heading--black {
     color: #303030;
@@ -481,12 +501,25 @@ img {
   }
 
 .heading--red {
+    color: #A44D4D;
+  }
+
+.heading--dark-red {
     color: #852222;
     -webkit-text-stroke: 0.5px rgba(133, 34, 34, 0.5);
   }
 
+.heading--bright {
+    color: #EEEEEE;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+  }
+
 .heading--block {
     display: block;
+  }
+
+.heading--margin {
+    margin: 50px auto 30px auto;
   }
 
 .paragraph {
@@ -498,4 +531,98 @@ img {
 
 .paragraph--black {
     color: #393939;
+  }
+
+.paragraph--white {
+    color: #D9D9D9;
+    font-weight: 300;
+  }
+
+.paragraph--gray {
+    color: #9D9D9D;
+  }
+
+.paragraph--no-t-margin {
+    margin-top: 0px;
+  }
+
+.paragraph--quote {
+    font-size: 17px;
+    font-style: italic;
+    margin-bottom: 0;
+    line-height: 1.5;
+  }
+
+.paragraph--tribute {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+
+.paragraph--tribute--right {
+    position: relative;
+    left: 25%;
+  }
+
+.intro__image {
+    display: block;
+    width: 80%;
+    margin: 50px auto -25px auto;
+    box-shadow: 18px 18px 0px -3px rgba(0, 0, 0, 0.75), -15px -15px 0px -10px rgba(0, 0, 0, 1);
+  }
+
+.cause-of-war {
+  background-color: var(--main-black);
+  position: relative;
+  z-index: -1;
+  padding-top: 50px;
+}
+
+.cause-of-war__image {
+    display: block;
+  }
+
+.cause-of-war__section {
+    position: absolute;
+    background-color: var(--main-red);
+    padding: 6px 0px;
+    bottom: 30px;
+  }
+
+.preparation__image {
+    display: block;
+  }
+
+.skirmishes {
+  background-color: var(--main-black);
+  padding-top: 30px;
+  position: relative;
+}
+
+.skirmishes__section {
+    background-color: var(--main-red);
+    margin-top: 50px;
+    padding: 6px 0px;
+    box-shadow: -5px -5px 6px rgba(81, 81, 81, 0.5);
+  }
+
+.skirmishes__image {
+    display: block;
+    width: 95%;
+  }
+
+.skirmishes__quote {
+    position: absolute;
+    bottom: 60px;
+  }
+
+.public-outcry__section {
+    background-color: var(--main-red);
+    margin-top: 40px;
+    padding-top: 35px;
+  }
+
+.public-outcry__image {
+    display: block;
+    max-width: 170%;
   }
