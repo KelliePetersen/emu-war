@@ -1,0 +1,10 @@
+.paragraph {
+  font-weight: 400;
+  max-width: 90%;
+  margin: 20px auto;
+  line-height: 1.4;
+
+  &--black {
+    color: #393939;
+  }
+}

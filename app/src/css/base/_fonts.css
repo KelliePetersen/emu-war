@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'NIGHTMARE PILLS';
+  src: url('../fonts/NIGHTMAREPILLS.eot');
+  src: url('../fonts/NIGHTMAREPILLS.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NIGHTMAREPILLS.woff2') format('woff2'),
+        url('../fonts/NIGHTMAREPILLS.woff') format('woff'),
+        url('../fonts/NIGHTMAREPILLS.ttf') format('truetype'),
+        url('../fonts/NIGHTMAREPILLS.svg#NIGHTMAREPILLS') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Romantic Couple';
+  src: url('../fonts/RomanticCouple.eot');
+  src: url('../fonts/RomanticCouple.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RomanticCouple.woff2') format('woff2'),
+        url('../fonts/RomanticCouple.woff') format('woff'),
+        url('../fonts/RomanticCouple.ttf') format('truetype'),
+        url('../fonts/RomanticCouple.svg#RomanticCouple') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

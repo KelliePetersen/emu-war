@@ -1,0 +1,26 @@
+.nav {
+
+  &__button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 5;
+  }
+
+  &__line {
+    width: 50px;
+    height: 5px;
+    margin: 10px;
+    background-color: #FCFCFC;
+    border-radius: 50px;
+    box-shadow: black;
+  }
+
+  &__list {
+    margin: 0;
+    @mixin atSmall {
+      display: none;
+    }
+  }
+
+}

@@ -1,0 +1,46 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #222;
+  background-image: url(/src/img/texture.png);
+
+  &__heading {
+    padding-top: 50px;
+    margin: 0;
+    font-weight: 100;
+    text-align: center;
+  }
+
+  &__heading__great {
+    font-family: 'Romantic Couple', 'cursive';
+    color: var(--heading-white);
+    font-size: 58px;
+    position: relative;
+    right: 50px;
+  }
+
+  &__heading__main {
+    font-family: 'NIGHTMARE PILLS';
+    color: var(--heading-red);
+    font-size: 148px;
+    line-height: 100px;
+  }
+
+  &__image {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-height: 65%;
+  }
+
+  &__decoration {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-top: #707070 solid 3px;
+  }
+}
