@@ -1,0 +1,17 @@
+.final-battle {
+  background-color: var(--main-black);
+  padding-top: 40px;
+
+  &__quote {
+    padding: 20px 0 50px 0;
+  }
+
+  &__second-quote {
+    background-color: var(--main-red);
+    padding: 30px 0;
+  }
+
+  &__image {
+    display: block;
+  }
+}

@@ -7,8 +7,11 @@
 @import "modules/_nav.css";
 @import "modules/_heading.css";
 @import "modules/_paragraph.css";
+@import "modules/_footer.css";
 @import "sections/_intro.css";
 @import "sections/_cause-of-war.css";
 @import "sections/_preparation.css";
 @import "sections/_skirmishes.css";
 @import "sections/_public-outcry.css";
+@import "sections/_final-battle.css";
+@import "sections/_aftermath.css";
