@@ -402,26 +402,95 @@ img {
   background-image: url(/src/img/texture.png);
 }
 
-.hero__heading {
-    padding-top: 50px;
-    margin: 0;
-    font-weight: 100;
+.hero__text {
+    position: absolute;
     text-align: center;
+    width: 90%;
+    max-width: 750px;
+    top: 50px;
+    left: 5%;
   }
 
-.hero__heading__great {
-    font-family: 'Romantic Couple', 'cursive';
-    color: var(--heading-white);
-    font-size: 58px;
-    position: relative;
-    right: 50px;
+@media (min-width: 768px) {
+
+.hero__text {
+      top: 150px
+  }
+  }
+
+.hero__heading {
+    margin: 0;
+    font-weight: 100;
   }
 
 .hero__heading__main {
     font-family: 'NIGHTMARE PILLS';
     color: var(--heading-red);
     font-size: 148px;
-    line-height: 100px;
+    line-height: 110px;
+  }
+
+@media (min-width: 768px) {
+
+.hero__heading__main {
+      margin: 0 10px
+  }
+  }
+
+@media (min-width: 1600px) {
+
+.hero__heading__main {
+      font-size: 164px
+  }
+  }
+
+.hero__subheading {
+    font-family: 'Romantic Couple', 'cursive';
+    color: var(--heading-white);
+    font-size: 58px;
+  }
+
+@media (min-width: 768px) {
+
+.hero__subheading {
+      font-size: 70px
+  }
+  }
+
+.hero__great {
+    display: block;
+    text-align: left;
+    margin-left: 7%;
+  }
+
+.hero__australia {
+    display: none;
+    text-align: right;
+    margin-right: 10%;
+  }
+
+@media (min-width: 768px) {
+
+.hero__australia {
+      display: block
+  }
+  }
+
+.hero__date {
+    display: none;
+    font-family: serif;
+    font-size: 1.25rem;
+    position: absolute;
+    bottom: 30px;
+    left: 4%;
+    color: #757575;
+  }
+
+@media (min-width: 768px) {
+
+.hero__date {
+      display: block
+  }
   }
 
 .hero__image {
@@ -524,7 +593,8 @@ img {
 
 .paragraph {
   font-weight: 400;
-  max-width: 90%;
+  width: 90%;
+  max-width: 640px;
   margin: 20px auto;
   line-height: 1.4;
 }

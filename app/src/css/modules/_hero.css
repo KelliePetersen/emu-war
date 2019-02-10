@@ -5,26 +5,76 @@
   background-color: #222;
   background-image: url(/src/img/texture.png);
 
-  &__heading {
-    padding-top: 50px;
-    margin: 0;
-    font-weight: 100;
+  &__text {
+    position: absolute;
     text-align: center;
+    width: 90%;
+    max-width: 750px;
+    top: 50px;
+    left: 5%;
+
+    @mixin atMedium {
+      top: 150px;
+    }
   }
 
-  &__heading__great {
-    font-family: 'Romantic Couple', 'cursive';
-    color: var(--heading-white);
-    font-size: 58px;
-    position: relative;
-    right: 50px;
+  &__heading {
+    margin: 0;
+    font-weight: 100;
   }
 
   &__heading__main {
     font-family: 'NIGHTMARE PILLS';
     color: var(--heading-red);
     font-size: 148px;
-    line-height: 100px;
+    line-height: 110px;
+
+    @mixin atMedium {
+      margin: 0 10px;
+    }
+    @mixin atLarge {
+      font-size: 164px;
+    }
+  }
+
+  &__subheading {
+    font-family: 'Romantic Couple', 'cursive';
+    color: var(--heading-white);
+    font-size: 58px;
+
+    @mixin atMedium {
+      font-size: 70px;
+    }
+  }
+
+  &__great {
+    display: block;
+    text-align: left;
+    margin-left: 7%;
+  }
+
+  &__australia {
+    display: none;
+    text-align: right;
+    margin-right: 10%;
+
+    @mixin atMedium {
+      display: block;
+    }
+  }
+
+  &__date {
+    display: none;
+    font-family: serif;
+    font-size: 1.25rem;
+    position: absolute;
+    bottom: 30px;
+    left: 4%;
+    color: #757575;
+
+    @mixin atMedium {
+      display: block;
+    }
   }
 
   &__image {
