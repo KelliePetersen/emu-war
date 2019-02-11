@@ -398,155 +398,11 @@ img {
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
 
 .hidden-at-small {
     display: block
 }
-  }
-
-.hero {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-color: #222;
-  background-image: url(/src/img/texture.png);
-}
-
-.hero__text {
-    position: absolute;
-    text-align: center;
-    width: 90%;
-    max-width: 750px;
-    top: 50px;
-    left: 5%;
-  }
-
-@media (min-width: 768px) {
-
-.hero__text {
-      top: 150px
-  }
-  }
-
-.hero__heading {
-    margin: 0;
-    font-weight: 100;
-  }
-
-.hero__heading__main {
-    font-family: 'NIGHTMARE PILLS';
-    color: var(--heading-red);
-    font-size: 148px;
-    line-height: 110px;
-  }
-
-@media (min-width: 768px) {
-
-.hero__heading__main {
-      margin: 0 10px
-  }
-  }
-
-@media (min-width: 1600px) {
-
-.hero__heading__main {
-      font-size: 164px
-  }
-  }
-
-.hero__subheading {
-    font-family: 'Romantic Couple', 'cursive';
-    color: var(--heading-white);
-    font-size: 58px;
-  }
-
-@media (min-width: 768px) {
-
-.hero__subheading {
-      font-size: 70px
-  }
-  }
-
-.hero__great {
-    display: block;
-    text-align: left;
-    margin-left: 7%;
-  }
-
-.hero__australia {
-    display: none;
-    text-align: right;
-    margin-right: 10%;
-  }
-
-@media (min-width: 768px) {
-
-.hero__australia {
-      display: block
-  }
-  }
-
-.hero__date {
-    display: none;
-    font-family: serif;
-    font-size: 1.25rem;
-    position: absolute;
-    bottom: 30px;
-    left: 4%;
-    color: #757575;
-  }
-
-@media (min-width: 768px) {
-
-.hero__date {
-      display: block
-  }
-  }
-
-.hero__image {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    max-height: 65%;
-  }
-
-.hero__decoration {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-    background-color: rgba(0, 0, 0, 0.25);
-    border-top: #707070 solid 3px;
-  }
-
-.nav__button {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 5;
-  }
-
-.nav__line {
-    width: 50px;
-    height: 5px;
-    margin: 10px;
-    background-color: #FCFCFC;
-    border-radius: 50px;
-    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
-  }
-
-.nav__list {
-    margin: 0;
-  }
-
-@media (min-width: 350px) {
-
-.nav__list {
-      display: none
-  }
   }
 
 .heading {
@@ -557,7 +413,7 @@ img {
   max-width: 700px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
 
 .heading {
     font-size: 59px;
@@ -571,7 +427,7 @@ img {
     margin-bottom: 5px;
   }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
 
 .heading--small {
       font-size: 38px;
@@ -602,7 +458,7 @@ img {
     color: #A44D4D;
   }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
 
 .heading--red {
       -webkit-text-stroke: 0.5px rgb(90, 30, 30)
@@ -623,7 +479,7 @@ img {
     display: block;
   }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
 
 .heading--block {
       display: inline
@@ -642,10 +498,10 @@ img {
   line-height: 1.4;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
 
 .paragraph {
-    font-size: 1.25rem
+    font-size: 1.125rem
 }
   }
 
@@ -673,10 +529,10 @@ img {
     line-height: 1.5;
   }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
 
 .paragraph--quote {
-      font-size: 22px
+      font-size: 20px
   }
   }
 
@@ -686,7 +542,7 @@ img {
     margin-left: 10%;
   }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
 
 .paragraph--tribute {
       font-size: 24px
@@ -697,6 +553,235 @@ img {
     position: relative;
     left: 25%;
   }
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-color: #222;
+  background-image: url(/src/img/texture.png);
+}
+
+.hero__container {
+    position: relative;
+    width: 100%;
+    max-width: 1580px;
+    height: 100vh;
+    margin: 0 auto;
+  }
+
+.hero__text {
+    position: absolute;
+    text-align: center;
+    width: 90%;
+    max-width: 700px;
+    top: 50px;
+    left: 5%;
+  }
+
+@media (min-width: 720px) {
+
+.hero__text {
+      top: 150px;
+      margin-left: calc(45% - 350px)
+  }
+  }
+
+@media (min-width: 1280px) {
+
+.hero__text {
+      top: 200px;
+      margin-left: 0
+  }
+  }
+
+.hero__heading {
+    margin: 0;
+    font-weight: 100;
+  }
+
+.hero__heading__main {
+    font-family: 'NIGHTMARE PILLS';
+    color: var(--heading-red);
+    font-size: 148px;
+    line-height: 110px;
+  }
+
+@media (min-width: 720px) {
+
+.hero__heading__main {
+      margin: 0
+  }
+  }
+
+@media (min-width: 1280px) {
+
+.hero__heading__main {
+      font-size: 164px
+  }
+  }
+
+.hero__subheading {
+    font-family: 'Romantic Couple', 'cursive';
+    color: var(--heading-white);
+    font-size: 58px;
+  }
+
+@media (min-width: 720px) {
+
+.hero__subheading {
+      font-size: 70px
+  }
+  }
+
+.hero__great {
+    display: block;
+    width: 50%;
+  }
+
+.hero__australia {
+    display: none;
+    text-align: right;
+    margin-right: 10%;
+  }
+
+@media (min-width: 720px) {
+
+.hero__australia {
+      display: block
+  }
+  }
+
+.hero__date {
+    display: none;
+    font-family: serif;
+    font-size: 1.25rem;
+    position: absolute;
+    bottom: 30px;
+    left: 6%;
+    color: #757575;
+  }
+
+@media (min-width: 720px) {
+
+.hero__date {
+      display: block
+  }
+  }
+
+@media (min-width: 1280px) {
+
+.hero__date {
+      left: 1%
+  }
+  }
+
+.hero__quote, .hero__tribute {
+    display: none;
+    position: absolute;
+    left: 5%;
+  }
+
+@media (min-width: 1280px) {
+
+.hero__quote, .hero__tribute {
+      display: block
+  }
+  }
+
+.hero__quote {
+    bottom: 220px;
+    max-width: 450px;
+    color: #757575;
+  }
+
+.hero__tribute {
+    bottom: 150px;
+  }
+
+.hero__image {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+    max-height: 65%;
+    z-index: 3;
+  }
+
+@media (min-width: 1280px) {
+
+.hero__image {
+      right: 25%;
+      max-height: 85%
+  }
+  }
+
+.hero__decoration {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-top: #707070 solid 3px;
+  }
+
+.nav__button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 5;
+  }
+
+@media (min-width: 1280px) {
+
+.nav__button {
+      display: none
+  }
+  }
+
+.nav__line {
+    width: 50px;
+    height: 5px;
+    margin: 10px;
+    background-color: #FCFCFC;
+    border-radius: 50px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+  }
+
+.nav__list {
+    display: none;
+    margin: 0;
+    padding: 30px 20px;
+    list-style-type: none;
+    position: fixed;
+    z-index: 5;
+    font-size: 18px;
+    background-color: #252525;
+    width: 100%;
+    text-align: right;
+  }
+
+@media (min-width: 1280px) {
+
+.nav__list {
+      display: block
+  }
+  }
+
+.nav__section {
+    display: inline;
+    padding: 25px;
+  }
+
+.nav__link {
+    text-decoration: none;
+    color: #DDD;
+    font-weight: 500;
+  }
+
+.nav__link:hover {
+      color: #A24D4D;
+    }
 
 .footer {
   position: relative;
@@ -746,7 +831,7 @@ img {
     width: 100%;
   }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
 
 .cause-of-war__section {
       padding: 25px 0px
@@ -757,7 +842,7 @@ img {
     display: block;
   }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
 
 .preparation__image {
       display: inline;
@@ -778,7 +863,7 @@ img {
     max-width: 100%;
   }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
 
 .skirmishes__card {
       background-color: white;
@@ -789,14 +874,14 @@ img {
   }
   }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
 
 .skirmishes__card:nth-child(1) {
       margin-left: 30%
   }
   }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
 
 .skirmishes__card:nth-child(2) {
       margin-left: 15%
@@ -807,7 +892,7 @@ img {
     color: #D9D9D9;
   }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
 
 .skirmishes__text {
       color: #393939
@@ -821,7 +906,7 @@ img {
     box-shadow: -5px -5px 6px rgba(81, 81, 81, 0.5);
   }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
 
 .skirmishes__section {
       margin-top: 150px;
@@ -840,7 +925,7 @@ img {
     bottom: 60px;
   }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
 
 .skirmishes__quote {
       left: 250px;
@@ -854,7 +939,7 @@ img {
     padding-top: 35px;
   }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
 
 .public-outcry__section {
       margin-top: 90px;
@@ -877,7 +962,7 @@ img {
     padding: 20px 0 50px 0;
   }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
 
 .final-battle__quote {
       padding: 50px 0 80px 0
@@ -902,12 +987,12 @@ img {
     width: 300px;
   }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
 
 .aftermath__quote {
       position: absolute;
       bottom: 450px;
-      right: 80px
+      left: 400px
   }
   }
 
@@ -917,7 +1002,7 @@ img {
     margin: 0 auto;
   }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
 
 .aftermath__image {
       height: 900px;
@@ -933,7 +1018,7 @@ img {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
 
 .aftermath__glass-quote {
       bottom: 100px;
@@ -951,14 +1036,14 @@ img {
     font-weight: 700;
   }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
 
 .aftermath__glass-quote__text {
       font-size: 2rem
   }
   }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
 
 .aftermath__glass-quote__tribute {
       margin-top: -30px;

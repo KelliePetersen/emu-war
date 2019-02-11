@@ -8,7 +8,7 @@
     @mixin atMedium {
       position: absolute;
       bottom: 450px;
-      right: 80px;
+      left: 400px;
     }
   }
 

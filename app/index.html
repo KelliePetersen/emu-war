@@ -18,21 +18,22 @@
 <body>
 
   <div class="hero">
-      <div class="nav__button">
-        <div class="nav__line"></div>
-        <div class="nav__line"></div>
-        <div class="nav__line"></div>
-      </div>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__section"><a class="nav__link" href="">Cause of War</a></li>
-          <li class="nav__section"><a class="nav__link" href="">Preparation</a></li>
-          <li class="nav__section"><a class="nav__link" href="">Skirmishes</a></li>
-          <li class="nav__section"><a class="nav__link" href="">Public Outcry</a></li>
-          <li class="nav__section"><a class="nav__link" href="">Final Battle</a></li>
-          <li class="nav__section"><a class="nav__link" href="">Aftermath</a></li>
-        </ul>
-      </nav>
+    <div class="nav__button">
+      <div class="nav__line"></div>
+      <div class="nav__line"></div>
+      <div class="nav__line"></div>
+    </div>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__section"><a class="nav__link" href="#cause-of-war">Cause of War</a></li>
+        <li class="nav__section"><a class="nav__link" href="#preparation">Preparation</a></li>
+        <li class="nav__section"><a class="nav__link" href="#skirmishes">Skirmishes</a></li>
+        <li class="nav__section"><a class="nav__link" href="#public-outcry">Public Outcry</a></li>
+        <li class="nav__section"><a class="nav__link" href="#final-battle">Final Battle</a></li>
+        <li class="nav__section"><a class="nav__link" href="#aftermath">Aftermath</a></li>
+      </ul>
+    </nav>
+    <div class="hero__container">
       <div class="hero__text">
         <h1 class="hero__heading">
           <span class="hero__subheading hero__great">The Great</span>
@@ -42,8 +43,12 @@
         </h1>
         <p class="hero__date">2 Nov 1932 - 19 Dec 1932</p>
       </div>
-      <div class="hero__decoration"></div>
+      <p class="paragraph paragraph--quote hero__quote">“They can face machine guns with the invulnerability of tanks. They are like Zulus whom even dum-dum bullets could not
+      stop."</p>
+      <p class="paragraph--gray paragraph--tribute hero__tribute">-- Major Meredith</p>
       <img class="hero__image" src="src/img/emu-evil.png" alt="A rather menacing-looking emu with red eyes">
+    </div>
+    <div class="hero__decoration"></div>
   </div>
 
   <section class="intro">
@@ -60,7 +65,7 @@
     <img class="intro__image" src="src/img/intro.png" alt="A cold-looking emu with orange eyes and an aura of death">
   </section>
 
-  <section class="cause-of-war">
+  <section class="cause-of-war" id="cause-of-war">
     <h1 class="heading heading--red">How the War Began</h1>
     <p class="paragraph paragraph--white">After the conclusion of World War I, soldiers returned home and took up the life of farmers, wishing only to know a
     peaceful and simple life. Now no longer soldiers, they served their country in a different capacity - they produced
@@ -83,7 +88,7 @@
     <img class="cause-of-war__image" src="src/img/cause-of-war.png" alt="">
   </section>
 
-  <section class="preparation">
+  <section class="preparation" id="preparation">
     <h1 class="heading heading--black">Battle Preparation</h1>
     <p class="paragraph paragraph--black">The farmers were still soldiers at heart. They knew that the only way to defeat this foe was with the best military
     power Australia had to offer. When they met Sir George Pearce, they urged the Minister to send trained military
@@ -97,7 +102,7 @@
     </div>
   </section>
 
-  <section class="skirmishes">
+  <section class="skirmishes" id="skirmishes">
     <h1 class="heading heading--white">Skirmishes</h1>
     <div class="skirmishes__card-container">
       <div class="skirmishes__card">
@@ -131,7 +136,7 @@
     <img src="src/img/wildlife.png" alt="" class="skirmishes__image">
   </section>
 
-  <section class="public-outcry">
+  <section class="public-outcry" id="public-outcry">
     <h1 class="heading heading--black heading--margin">Public Outcry</h1>
     <p class="paragraph paragraph--black">The Lord High Emu turned the people against Australia, locally and abroad. Conservationists in the United Kingdom
     protested the war, calling it an "extermination of the rare emu". Dominic Serventy and Hubert Whittel, eminent
@@ -153,7 +158,7 @@
     </div>
   </section>
 
-  <article class="final-battle">
+  <article class="final-battle" id="final-battle">
     <h1 class="heading heading--white">Final Battle</h1>
     <p class="paragraph paragraph--white">The final battle, better known as the Six Day Siege (despite being longer), was a last attempt at quelling the emu
     threat.</p>
@@ -179,7 +184,7 @@
     </div>
   </article>
 
-  <article class="aftermath">
+  <article class="aftermath" id="aftermath">
     <h1 class="heading heading--black heading--margin">Aftermath</h1>
     <p class="paragraph paragraph--black">The Emu Republic continued to terrorize the farmers for decades. The farmers repeatedly requested military
     intervention, but the Australian Government refused, for fear of retaliation from the Lord High Emu.</p>

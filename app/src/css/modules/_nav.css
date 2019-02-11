@@ -5,6 +5,10 @@
     top: 20px;
     right: 20px;
     z-index: 5;
+
+    @mixin atLarge {
+      display: none;
+    }
   }
 
   &__line {
@@ -17,9 +21,34 @@
   }
 
   &__list {
+    display: none;
     margin: 0;
-    @mixin atSmall {
-      display: none;
+    padding: 30px 20px;
+    list-style-type: none;
+    position: fixed;
+    z-index: 5;
+    font-size: 18px;
+    background-color: #252525;
+    width: 100%;
+    text-align: right;
+
+    @mixin atLarge {
+      display: block;
+    }
+  }
+
+  &__section {
+    display: inline;
+    padding: 25px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #DDD;
+    font-weight: 500;
+
+    &:hover {
+      color: #A24D4D;
     }
   }
 

@@ -6,7 +6,7 @@
   line-height: 1.4;
 
   @mixin atMedium {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
 
   &--black {
@@ -31,7 +31,7 @@
     line-height: 1.5;
 
     @mixin atMedium {
-      font-size: 22px;
+      font-size: 20px;
     }
   }
   &--tribute {
