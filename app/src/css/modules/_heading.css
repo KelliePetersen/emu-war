@@ -3,10 +3,22 @@
   font-size: 36px;
   text-align: center;
   line-height: 42px;
+  max-width: 700px;
+
+  @mixin atMedium {
+    font-size: 59px;
+    line-height: 62px;
+    margin: 50px auto;
+  }
 
   &--small {
     font-size: 24px;
     margin-bottom: 5px;
+
+    @mixin atMedium {
+      font-size: 38px;
+      margin-top: 0px;
+    }
   }
 
   &--left {
@@ -29,6 +41,9 @@
   }
   &--red {
     color: #A44D4D;
+    @mixin atMedium {
+      -webkit-text-stroke: 0.5px rgb(90, 30, 30);
+    }
   }
   &--dark-red {
     color: #852222;
@@ -36,11 +51,14 @@
   }
   &--bright {
     color: #EEEEEE;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+    text-shadow: 1px 1px 5px rgba(200, 200, 200, 0.5);
   }
 
   &--block {
     display: block;
+    @mixin atMedium {
+      display: inline;
+    }
   }
   &--margin {
     margin: 50px auto 30px auto;

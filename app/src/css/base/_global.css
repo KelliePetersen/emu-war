@@ -11,3 +11,11 @@ img {
 * {
   box-sizing: border-box;
 }
+
+.hidden-at-small {
+  display: none;
+
+  @mixin atMedium {
+    display: block;
+  }
+}

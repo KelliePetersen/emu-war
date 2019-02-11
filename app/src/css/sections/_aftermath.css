@@ -4,27 +4,57 @@
   &__quote {
     margin: 80px auto;
     width: 300px;
+
+    @mixin atMedium {
+      position: absolute;
+      bottom: 450px;
+      right: 80px;
+    }
   }
 
   &__image {
     height: 700px;
     display: block;
     margin: 0 auto;
+
+    @mixin atMedium {
+      height: 900px;
+      margin-left: 10%;
+    }
   }
 
   &__glass-quote {
     position: absolute;
     bottom: 50px;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.7);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+
+    @mixin atMedium {
+      bottom: 100px;
+      padding: 10px;
+    }
   }
 
   &__glass-quote__text {
     font-family: 'Romantic Couple';
     font-size: 1.5rem;
-    max-width: 90%;
+    width: 90%;
+    max-width: 567px;
     margin: 20px auto;
     color: black;
     font-weight: 700;
+
+    @mixin atMedium {
+      font-size: 2rem;
+    }
+  }
+
+  &__glass-quote__tribute {
+    @mixin atMedium {
+      margin-top: -30px;
+      margin-left: 40%;
+      max-width: 400px;
+    }
   }
 }

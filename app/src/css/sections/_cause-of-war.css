@@ -6,12 +6,18 @@
 
   &__image {
     display: block;
+    margin: 0 auto;
   }
 
   &__section {
     position: absolute;
     background-color: var(--main-red);
     padding: 6px 0px;
-    bottom: 30px;
+    bottom: 50px;
+    width: 100%;
+
+    @mixin atMedium {
+      padding: 25px 0px;
+    }
   }
 }

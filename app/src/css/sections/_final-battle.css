@@ -4,6 +4,9 @@
 
   &__quote {
     padding: 20px 0 50px 0;
+    @mixin atMedium {
+      padding: 50px 0 80px 0;
+    }
   }
 
   &__second-quote {
