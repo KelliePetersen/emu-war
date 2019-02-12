@@ -4,9 +4,49 @@
   z-index: -1;
   padding-top: 50px;
 
+  @mixin atLarge {
+    background-image: linear-gradient(to right, #B08A64 0.5%, white 0.5%, white 33%, var(--main-black) 33%);
+    padding-top: 0;
+  }
+
+  &__heading {
+    @mixin atLarge {
+      position: absolute;
+      bottom: 670px;
+      left: 4%;
+      z-index: 1;
+    }
+    @mixin atUltra {
+      left: 12%;
+    }
+  }
+
   &__image {
     display: block;
     margin: 0 auto;
+
+    @mixin atLarge {
+      position: absolute;
+      bottom: 0px;
+      left: 55%;
+      max-height: 80%;
+      z-index: -1;
+    }
+  }
+
+  &__white-section {
+    @mixin atLarge {
+      position: absolute;
+      left: 1%;
+      bottom: 360px;
+      background-color: white;
+      width: 750px;
+      max-width: 750px;
+    }
+
+    @mixin atUltra {
+      left: 10%;
+    }
   }
 
   &__section {
@@ -18,6 +58,17 @@
 
     @mixin atMedium {
       padding: 25px 0px;
+    }
+
+    @mixin atLarge {
+      padding: 0;
+      max-width: 700px;
+      bottom: 80px;
+      left: 10%;
+    }
+
+    @mixin atUltra {
+      left: 20%;
     }
   }
 }
