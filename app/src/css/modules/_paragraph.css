@@ -9,6 +9,10 @@
     font-size: 1.125rem;
   }
 
+  @mixin atLarge {
+    margin: 30px 0;
+  }
+
   &--black {
     color: #393939;
   }

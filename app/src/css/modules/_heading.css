@@ -11,6 +11,11 @@
     margin: 50px auto;
   }
 
+  @mixin atLarge {
+    text-align: left;
+    margin: 30px 0 60px 0;
+  }
+
   &--small {
     font-size: 24px;
     margin-bottom: 5px;

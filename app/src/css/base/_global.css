@@ -12,6 +12,12 @@ img {
   box-sizing: border-box;
 }
 
+.fullscreen-at-large {
+  @mixin atLarge {
+    height: 103vh;
+  }
+}
+
 .hidden-at-small {
   display: none;
 

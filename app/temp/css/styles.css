@@ -394,6 +394,13 @@ img {
   box-sizing: border-box;
 }
 
+@media (min-width: 1280px) {
+
+.fullscreen-at-large {
+    height: 103vh
+}
+  }
+
 .hidden-at-small {
   display: none;
 }
@@ -419,6 +426,14 @@ img {
     font-size: 59px;
     line-height: 62px;
     margin: 50px auto
+}
+  }
+
+@media (min-width: 1280px) {
+
+.heading {
+    text-align: left;
+    margin: 30px 0 60px 0
 }
   }
 
@@ -505,6 +520,13 @@ img {
 }
   }
 
+@media (min-width: 1280px) {
+
+.paragraph {
+    margin: 30px 0
+}
+  }
+
 .paragraph--black {
     color: #393939;
   }
@@ -554,11 +576,94 @@ img {
     left: 25%;
   }
 
+.nav__background {
+    display: none;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 80px;
+    background-color: #252525;
+    z-index: 3;
+  }
+
+@media (min-width: 1280px) {
+
+.nav__background {
+      display: block
+  }
+  }
+
+.nav__button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 5;
+  }
+
+@media (min-width: 1280px) {
+
+.nav__button {
+      display: none
+  }
+  }
+
+.nav__line {
+    width: 50px;
+    height: 5px;
+    margin: 10px;
+    background-color: #FCFCFC;
+    border-radius: 50px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+  }
+
+.nav__home {
+    height: 35px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+  }
+
+.nav__list {
+    display: none;
+    margin: 0;
+    padding: 30px 20px;
+    list-style-type: none;
+    position: fixed;
+    z-index: 5;
+    font-size: 18px;
+    width: 100%;
+    text-align: right;
+  }
+
+@media (min-width: 1280px) {
+
+.nav__list {
+      display: block
+  }
+  }
+
+.nav__section {
+    display: inline;
+    padding: 25px;
+  }
+
+.nav__link {
+    text-decoration: none;
+    color: #DDD;
+    font-weight: 500;
+  }
+
+.nav__link:hover {
+      color: #A24D4D;
+    }
+
 .hero {
+  position: relative;
   width: 100%;
   height: 100vh;
   background-color: #222;
   background-image: url(/src/img/texture.png);
+  z-index: 4;
 }
 
 .hero__container {
@@ -635,7 +740,13 @@ img {
 
 .hero__great {
     display: block;
-    width: 50%;
+  }
+
+@media (min-width: 720px) {
+
+.hero__great {
+      width: 50%
+  }
   }
 
 .hero__australia {
@@ -705,7 +816,7 @@ img {
     -webkit-transform: translateX(50%);
             transform: translateX(50%);
     max-height: 65%;
-    z-index: 3;
+    z-index: 4;
   }
 
 @media (min-width: 1280px) {
@@ -724,64 +835,6 @@ img {
     background-color: rgba(0, 0, 0, 0.25);
     border-top: #707070 solid 3px;
   }
-
-.nav__button {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 5;
-  }
-
-@media (min-width: 1280px) {
-
-.nav__button {
-      display: none
-  }
-  }
-
-.nav__line {
-    width: 50px;
-    height: 5px;
-    margin: 10px;
-    background-color: #FCFCFC;
-    border-radius: 50px;
-    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
-  }
-
-.nav__list {
-    display: none;
-    margin: 0;
-    padding: 30px 20px;
-    list-style-type: none;
-    position: fixed;
-    z-index: 5;
-    font-size: 18px;
-    background-color: #252525;
-    width: 100%;
-    text-align: right;
-  }
-
-@media (min-width: 1280px) {
-
-.nav__list {
-      display: block
-  }
-  }
-
-.nav__section {
-    display: inline;
-    padding: 25px;
-  }
-
-.nav__link {
-    text-decoration: none;
-    color: #DDD;
-    font-weight: 500;
-  }
-
-.nav__link:hover {
-      color: #A24D4D;
-    }
 
 .footer {
   position: relative;
@@ -803,12 +856,59 @@ img {
     right: 10px;
   }
 
+.intro {
+  position: relative;
+}
+
+.intro__container {
+    max-width: 1450px;
+  }
+
+@media (min-width: 1280px) {
+
+.intro__container {
+      display: grid;
+      grid-template-columns: auto auto;
+      max-height: 730px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      width: 90%
+  }
+  }
+
 .intro__image {
     display: block;
     width: 80%;
     max-width: 380px;
     margin: 50px auto -25px auto;
     box-shadow: 18px 18px 0px -3px rgba(0, 0, 0, 0.75), -15px -15px 0px -10px rgba(0, 0, 0, 1);
+  }
+
+@media (min-width: 1280px) {
+
+.intro__image {
+      width: 100%;
+      max-width: 530px;
+      margin: 0
+  }
+  }
+
+.intro__link {
+    display: none;
+    margin-top: 60px;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #7B4949;
+  }
+
+@media (min-width: 1280px) {
+
+.intro__link {
+      display: block
+  }
   }
 
 .cause-of-war {
@@ -937,6 +1037,7 @@ img {
     background-color: var(--main-red);
     margin-top: 40px;
     padding-top: 35px;
+    overflow: hidden;
   }
 
 @media (min-width: 720px) {

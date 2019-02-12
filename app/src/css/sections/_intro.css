@@ -1,4 +1,19 @@
 .intro {
+  position: relative;
+
+  &__container {
+    max-width: 1450px;
+    @mixin atLarge {
+      display: grid;
+      grid-template-columns: auto auto;
+      max-height: 730px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90%;
+    }
+  }
 
   &__image {
     display: block;
@@ -6,5 +21,23 @@
     max-width: 380px;
     margin: 50px auto -25px auto;
     box-shadow: 18px 18px 0px -3px rgba(0, 0, 0, 0.75), -15px -15px 0px -10px rgba(0, 0, 0, 1);
+
+    @mixin atLarge {
+      width: 100%;
+      max-width: 530px;
+      margin: 0;
+    }
+  }
+
+  &__link {
+    display: none;
+    margin-top: 60px;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #7B4949;
+
+    @mixin atLarge {
+      display: block;
+    }
   }
 }

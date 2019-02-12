@@ -17,22 +17,24 @@
 
 <body>
 
-  <div class="hero">
-    <div class="nav__button">
-      <div class="nav__line"></div>
-      <div class="nav__line"></div>
-      <div class="nav__line"></div>
-    </div>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__section"><a class="nav__link" href="#cause-of-war">Cause of War</a></li>
-        <li class="nav__section"><a class="nav__link" href="#preparation">Preparation</a></li>
-        <li class="nav__section"><a class="nav__link" href="#skirmishes">Skirmishes</a></li>
-        <li class="nav__section"><a class="nav__link" href="#public-outcry">Public Outcry</a></li>
-        <li class="nav__section"><a class="nav__link" href="#final-battle">Final Battle</a></li>
-        <li class="nav__section"><a class="nav__link" href="#aftermath">Aftermath</a></li>
-      </ul>
-    </nav>
+  <div class="nav__button">
+    <div class="nav__line"></div>
+    <div class="nav__line"></div>
+    <div class="nav__line"></div>
+  </div>
+  <nav class="nav">
+    <div class="nav__background"></div>
+    <ul class="nav__list">
+      <a href="#home"><img src="src/img/home.png" alt="home icon" class="nav__home"></a>
+      <li class="nav__section"><a class="nav__link" href="#cause-of-war">Cause of War</a></li>
+      <li class="nav__section"><a class="nav__link" href="#preparation">Preparation</a></li>
+      <li class="nav__section"><a class="nav__link" href="#skirmishes">Skirmishes</a></li>
+      <li class="nav__section"><a class="nav__link" href="#public-outcry">Public Outcry</a></li>
+      <li class="nav__section"><a class="nav__link" href="#final-battle">Final Battle</a></li>
+      <li class="nav__section"><a class="nav__link" href="#aftermath">Aftermath</a></li>
+    </ul>
+  </nav>
+  <div class="hero" id="home">
     <div class="hero__container">
       <div class="hero__text">
         <h1 class="hero__heading">
@@ -51,18 +53,23 @@
     <div class="hero__decoration"></div>
   </div>
 
-  <section class="intro">
-    <h1 class="heading heading--black">Australia's most <span class="heading--block heading--dark-red">devastating</span> Civil War</h1>
-    <p class="paragraph paragraph--black">There has never been a greater cause of despair than the Great Emu War of '32. During the faithful month of
-      October,
-      the Emu Republic seized half the fertile territory of Western Australia, with a force that outnumbered Australia
-      3000
-      to 1.</p>
-    <p class="paragraph paragraph--black">The invading force consumed and destroyed vast amounts of farming land, from a country that was already
-      suffering from
-      World War I. Its people starving, Australia had no choice but to declare war - a choice they ultimately
-      regretted.</p>
-    <img class="intro__image" src="src/img/intro.png" alt="A cold-looking emu with orange eyes and an aura of death">
+  <section class="intro fullscreen-at-large">
+    <div class="intro__container">
+      <div class="intro__text">
+        <h1 class="heading heading--black">Australia's most <span class="heading--block heading--dark-red">devastating</span> Civil War</h1>
+        <p class="paragraph paragraph--black">There has never been a greater cause of despair than the Great Emu War of '32. During the faithful month of
+          October,
+          the Emu Republic seized half the fertile territory of Western Australia, with a force that outnumbered Australia
+          3000
+          to 1.</p>
+        <p class="paragraph paragraph--black">The invading force consumed and destroyed vast amounts of farming land, from a country that was already
+          suffering from
+          World War I. Its people starving, Australia had no choice but to declare war - a choice they ultimately
+          regretted.</p>
+        <a class="intro__link" href="#cause-of-war">How it Began --></a>
+      </div>
+      <img class="intro__image" src="src/img/intro.png" alt="A cold-looking emu with orange eyes and an aura of death">
+    </div>
   </section>
 
   <section class="cause-of-war" id="cause-of-war">
