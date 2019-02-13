@@ -67,5 +67,9 @@
   }
   &--margin {
     margin: 50px auto 30px auto;
+
+    @mixin atLarge {
+      margin: 0;
+    }
   }
 }

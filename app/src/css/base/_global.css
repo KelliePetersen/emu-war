@@ -14,6 +14,7 @@ img {
 
 .fullscreen-at-large {
   @mixin atLarge {
+    min-height: 800px;
     height: 103vh;
   }
 }

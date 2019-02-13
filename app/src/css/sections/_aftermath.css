@@ -1,5 +1,19 @@
 .aftermath {
   position: relative;
+  overflow: hidden;
+
+  @mixin atLarge {
+    background-image: linear-gradient(to right, var(--main-red) 10%, white 10%);
+  }
+
+  &__container {
+    @mixin atLarge {
+      background-color: white;
+      padding-top: 160px;
+      margin-left: calc(45% - 550px);
+      border: 10px solid white;
+    }
+  }
 
   &__quote {
     margin: 80px auto;
@@ -8,7 +22,19 @@
     @mixin atMedium {
       position: absolute;
       bottom: 450px;
-      left: 400px;
+      left: calc(350px + (30% - 200px));
+    }
+
+    @mixin atLarge {
+      width: 450px;
+      margin: 0;
+      bottom: 5%;
+      left: calc(40% - 300px);
+      display: none;
+    }
+
+    @mixin atTall {
+      display: block;
     }
   }
 
@@ -19,7 +45,15 @@
 
     @mixin atMedium {
       height: 900px;
-      margin-left: 10%;
+      margin-left: calc(30% - 200px);
+    }
+
+    @mixin atLarge {
+      position: absolute;
+      bottom: 0px;
+      left: 55%;
+      margin: 0;
+      max-height: 85%;
     }
   }
 
@@ -33,6 +67,12 @@
     @mixin atMedium {
       bottom: 100px;
       padding: 10px;
+    }
+
+    @mixin atLarge {
+      width: 600px;
+      right: calc(21% - 300px);
+      bottom: 5%;
     }
   }
 
@@ -55,6 +95,10 @@
       margin-top: -30px;
       margin-left: 40%;
       max-width: 400px;
+    }
+    @mixin atLarge {
+      margin-top: -10px;
+      margin-left: 20%;
     }
   }
 }

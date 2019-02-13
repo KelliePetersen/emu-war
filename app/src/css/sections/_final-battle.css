@@ -1,20 +1,61 @@
 .final-battle {
   background-color: var(--main-black);
   padding-top: 40px;
+  position: relative;
+  overflow: hidden;
+
+  @mixin atLarge {
+    padding: 0;
+    background-image: linear-gradient(to right, var(--main-black) 66%, white 66%);
+  }
+
+  &__container {
+    @mixin atLarge {
+      padding-top: 80px;
+      margin-left: 20px;
+      padding-left: calc(68% - 1140px);
+      box-sizing: content-box;
+      max-width: 46%;
+    }
+  }
 
   &__quote {
     padding: 20px 0 50px 0;
     @mixin atMedium {
       padding: 50px 0 80px 0;
     }
+    @mixin atLarge {
+      width: 530px;
+      padding: 4% 0;
+    }
   }
 
   &__second-quote {
     background-color: var(--main-red);
     padding: 30px 0;
+
+    @mixin atLarge {
+      position: absolute;
+      right: calc(35% - 450px);
+      top: calc(15% + 80px);
+      width: 720px;
+      max-width: 51%;
+      max-height: 300px;
+      border-left: 30px solid var(--main-red);
+    }
   }
 
   &__image {
     display: block;
+    margin: 0 auto;
+
+    @mixin atLarge {
+      position: absolute;
+      right: calc(35% - 250px);
+      bottom: calc(45% - 350px);
+      max-width: 40%;
+      max-height: 40%;
+      z-index: 2;
+    }
   }
 }

@@ -12,7 +12,7 @@
   &__heading {
     @mixin atLarge {
       position: absolute;
-      bottom: 670px;
+      bottom: calc(40% + 260px);
       left: 4%;
       z-index: 1;
     }
@@ -38,7 +38,7 @@
     @mixin atLarge {
       position: absolute;
       left: 1%;
-      bottom: 360px;
+      bottom: calc(40% - 50px);
       background-color: white;
       width: 750px;
       max-width: 750px;
@@ -63,7 +63,7 @@
     @mixin atLarge {
       padding: 0;
       max-width: 700px;
-      bottom: 80px;
+      bottom: calc(40% - 320px);
       left: 10%;
     }
 

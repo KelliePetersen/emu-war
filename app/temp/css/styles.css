@@ -397,6 +397,7 @@ img {
 @media (min-width: 1280px) {
 
 .fullscreen-at-large {
+    min-height: 800px;
     height: 103vh
 }
   }
@@ -505,6 +506,13 @@ img {
     margin: 50px auto 30px auto;
   }
 
+@media (min-width: 1280px) {
+
+.heading--margin {
+      margin: 0
+  }
+  }
+
 .paragraph {
   font-weight: 400;
   width: 90%;
@@ -525,10 +533,6 @@ img {
 .paragraph {
     margin: 30px 0
 }
-  }
-
-.paragraph--center {
-    margin: 20px auto;
   }
 
 .paragraph--black {
@@ -575,6 +579,20 @@ img {
   }
   }
 
+@media (min-width: 1280px) {
+
+.paragraph--big-at-large {
+      font-size: 1.5rem
+  }
+  }
+
+@media (min-width: 1280px) {
+
+.paragraph--no-margin-at-large {
+      margin: 0
+  }
+  }
+
 .paragraph--tribute {
     font-size: 20px;
     margin-top: 10px;
@@ -591,6 +609,22 @@ img {
 .paragraph--tribute--right {
     position: relative;
     left: 25%;
+  }
+
+.paragraph--center {
+    margin: 20px auto;
+  }
+
+.paragraph--center-no-m {
+    margin: 0 auto;
+  }
+
+@media (min-width: 1280px) {
+
+.paragraph--right-at-large {
+      margin-left: 18%;
+      margin-top: 10px
+  }
   }
 
 .nav__background {
@@ -678,6 +712,7 @@ img {
   position: relative;
   width: 100%;
   height: 100vh;
+  min-height: 500px;
   background-color: #222;
   background-image: url(/src/img/texture.png);
   z-index: 4;
@@ -685,6 +720,7 @@ img {
 
 .hero__container {
     position: relative;
+    min-height: 500px;
     width: 100%;
     max-width: 1580px;
     height: 100vh;
@@ -711,7 +747,7 @@ img {
 @media (min-width: 1280px) {
 
 .hero__text {
-      top: 200px;
+      top: 20%;
       margin-left: 0
   }
   }
@@ -816,14 +852,21 @@ img {
   }
   }
 
+@media (max-height: 700px) {
+
+.hero__quote, .hero__tribute {
+      display: none
+  }
+  }
+
 .hero__quote {
-    bottom: 220px;
+    bottom: calc(40% - 150px);
     max-width: 450px;
     color: #757575;
   }
 
 .hero__tribute {
-    bottom: 150px;
+    bottom: calc(40% - 220px);
   }
 
 .hero__image {
@@ -947,7 +990,7 @@ img {
 
 .cause-of-war__heading {
       position: absolute;
-      bottom: 670px;
+      bottom: calc(40% + 260px);
       left: 4%;
       z-index: 1
   }
@@ -981,7 +1024,7 @@ img {
 .cause-of-war__white-section {
       position: absolute;
       left: 1%;
-      bottom: 360px;
+      bottom: calc(40% - 50px);
       background-color: white;
       width: 750px;
       max-width: 750px
@@ -1015,7 +1058,7 @@ img {
 .cause-of-war__section {
       padding: 0;
       max-width: 700px;
-      bottom: 80px;
+      bottom: calc(40% - 320px);
       left: 10%
   }
   }
@@ -1146,7 +1189,28 @@ img {
 .final-battle {
   background-color: var(--main-black);
   padding-top: 40px;
+  position: relative;
+  overflow: hidden;
 }
+
+@media (min-width: 1280px) {
+
+.final-battle {
+    padding: 0;
+    background-image: linear-gradient(to right, var(--main-black) 66%, white 66%)
+}
+  }
+
+@media (min-width: 1280px) {
+
+.final-battle__container {
+      padding-top: 80px;
+      margin-left: 20px;
+      padding-left: calc(68% - 1140px);
+      box-sizing: content-box;
+      max-width: 46%
+  }
+  }
 
 .final-battle__quote {
     padding: 20px 0 50px 0;
@@ -1159,18 +1223,70 @@ img {
   }
   }
 
+@media (min-width: 1280px) {
+
+.final-battle__quote {
+      width: 530px;
+      padding: 4% 0
+  }
+  }
+
 .final-battle__second-quote {
     background-color: var(--main-red);
     padding: 30px 0;
   }
 
+@media (min-width: 1280px) {
+
+.final-battle__second-quote {
+      position: absolute;
+      right: calc(35% - 450px);
+      top: calc(15% + 80px);
+      width: 720px;
+      max-width: 51%;
+      max-height: 300px;
+      border-left: 30px solid var(--main-red)
+  }
+  }
+
 .final-battle__image {
     display: block;
+    margin: 0 auto;
+  }
+
+@media (min-width: 1280px) {
+
+.final-battle__image {
+      position: absolute;
+      right: calc(35% - 250px);
+      bottom: calc(45% - 350px);
+      max-width: 40%;
+      max-height: 40%;
+      z-index: 2
+  }
   }
 
 .aftermath {
   position: relative;
+  overflow: hidden;
 }
+
+@media (min-width: 1280px) {
+
+.aftermath {
+    background-image: linear-gradient(to right, var(--main-red) 10%, white 10%)
+}
+  }
+
+@media (min-width: 1280px) {
+
+.aftermath__container {
+      background-color: white;
+      padding-top: 160px;
+      margin-left: calc(45% - 550px);
+      border: 10px solid white
+  }
+  }
 
 .aftermath__quote {
     margin: 80px auto;
@@ -1182,7 +1298,25 @@ img {
 .aftermath__quote {
       position: absolute;
       bottom: 450px;
-      left: 400px
+      left: calc(350px + (30% - 200px))
+  }
+  }
+
+@media (min-width: 1280px) {
+
+.aftermath__quote {
+      width: 450px;
+      margin: 0;
+      bottom: 5%;
+      left: calc(40% - 300px);
+      display: none
+  }
+  }
+
+@media (min-height: 900px) {
+
+.aftermath__quote {
+      display: block
   }
   }
 
@@ -1196,7 +1330,18 @@ img {
 
 .aftermath__image {
       height: 900px;
-      margin-left: 10%
+      margin-left: calc(30% - 200px)
+  }
+  }
+
+@media (min-width: 1280px) {
+
+.aftermath__image {
+      position: absolute;
+      bottom: 0px;
+      left: 55%;
+      margin: 0;
+      max-height: 85%
   }
   }
 
@@ -1213,6 +1358,15 @@ img {
 .aftermath__glass-quote {
       bottom: 100px;
       padding: 10px
+  }
+  }
+
+@media (min-width: 1280px) {
+
+.aftermath__glass-quote {
+      width: 600px;
+      right: calc(21% - 300px);
+      bottom: 5%
   }
   }
 
@@ -1239,5 +1393,13 @@ img {
       margin-top: -30px;
       margin-left: 40%;
       max-width: 400px
+  }
+  }
+
+@media (min-width: 1280px) {
+
+.aftermath__glass-quote__tribute {
+      margin-top: -10px;
+      margin-left: 20%
   }
   }
