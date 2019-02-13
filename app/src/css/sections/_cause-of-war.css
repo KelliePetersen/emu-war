@@ -5,7 +5,7 @@
   padding-top: 50px;
 
   @mixin atLarge {
-    background-image: linear-gradient(to right, #B08A64 0.5%, white 0.5%, white 33%, var(--main-black) 33%);
+    background-image: linear-gradient(to right, var(--main-orange) 0.5%, white 0.5%, white 33%, var(--main-black) 33%);
     padding-top: 0;
   }
 

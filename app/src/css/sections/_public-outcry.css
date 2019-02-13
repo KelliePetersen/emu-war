@@ -1,12 +1,35 @@
 .public-outcry {
+  overflow: hidden;
+  position: relative;
+
+  @mixin atLarge {
+    background-image: linear-gradient(to right, white 66%, var(--main-red) 66%);
+  }
+
+  &__container {
+    @mixin atLarge {
+      padding-top: 120px;
+      margin-left: 20px;
+      padding-left: calc(68% - 1140px);
+    }
+  }
+  
   &__section {
     background-color: var(--main-red);
-    margin-top: 40px;
+    margin: 40px auto 0 auto;
     padding-top: 35px;
     overflow: hidden;
-    @mixin atMedium {
-      margin-top: 90px;
-      padding-top: 70px;
+    max-width: 1000px;
+    
+    @mixin atLarge {
+      background-color: white;
+      margin: 0;
+      padding-top: 0;
+      display: none;
+    }
+
+    @mixin atTall {
+      display: block;
     }
   }
 
@@ -14,5 +37,12 @@
     display: block;
     width: 170%;
     max-width: 1000px;
+    margin: 0 auto;
+
+    @mixin atLarge {
+      position: absolute;
+      bottom: 0px;
+      left: 66%;
+    }
   }
 }

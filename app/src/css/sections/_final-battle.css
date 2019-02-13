@@ -42,6 +42,7 @@
       max-width: 51%;
       max-height: 300px;
       border-left: 30px solid var(--main-red);
+      box-shadow: 7px 7px 1px 6px var(--main-orange);
     }
   }
 

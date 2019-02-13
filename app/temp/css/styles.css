@@ -378,6 +378,7 @@ template {
   --heading-red: #6F171A;
   --main-red: #A24D4D;
   --main-black: #252525;
+  --main-orange: #B08A64;
 }
 
 body {
@@ -511,6 +512,12 @@ img {
 .heading--margin {
       margin: 0
   }
+  }
+
+.heading--center-at-large {
+    position: absolute;
+    left: 30%;
+    top: 80px;
   }
 
 .paragraph {
@@ -981,7 +988,7 @@ img {
 @media (min-width: 1280px) {
 
 .cause-of-war {
-    background-image: linear-gradient(to right, #B08A64 0.5%, white 0.5%, white 33%, var(--main-black) 33%);
+    background-image: linear-gradient(to right, var(--main-orange) 0.5%, white 0.5%, white 33%, var(--main-black) 33%);
     padding-top: 0
 }
   }
@@ -1090,9 +1097,19 @@ img {
 }
 
 .skirmishes__card-container {
-    position: relative;
+    position: absolute;
     width: 768px;
     max-width: 100%;
+    margin: 0 auto;
+  }
+
+@media (min-width: 1280px) {
+
+.skirmishes__card-container {
+      bottom: 5%;
+      right: 5%;
+      max-width: 50%
+  }
   }
 
 @media (min-width: 720px) {
@@ -1109,14 +1126,15 @@ img {
 @media (min-width: 720px) {
 
 .skirmishes__card:nth-child(1) {
-      margin-left: 30%
+      margin-left: auto
   }
   }
 
 @media (min-width: 720px) {
 
 .skirmishes__card:nth-child(2) {
-      margin-left: 15%
+      margin-left: auto;
+      margin-right: auto
   }
   }
 
@@ -1146,10 +1164,30 @@ img {
   }
   }
 
+@media (min-width: 1280px) {
+
+.skirmishes__section {
+      position: absolute;
+      bottom: 10px;
+      max-width: 570px;
+      padding: 0 0 0 30px
+  }
+  }
+
 .skirmishes__image {
     display: block;
     width: 95%;
     max-width: 565px;
+  }
+
+@media (min-width: 1280px) {
+
+.skirmishes__image {
+      position: absolute;
+      bottom: 0px;
+      max-height: 80%;
+      width: auto
+  }
   }
 
 .skirmishes__quote {
@@ -1165,18 +1203,49 @@ img {
   }
   }
 
-.public-outcry__section {
-    background-color: var(--main-red);
-    margin-top: 40px;
-    padding-top: 35px;
-    overflow: hidden;
+.public-outcry {
+  overflow: hidden;
+  position: relative;
+}
+
+@media (min-width: 1280px) {
+
+.public-outcry {
+    background-image: linear-gradient(to right, white 66%, var(--main-red) 66%)
+}
   }
 
-@media (min-width: 720px) {
+@media (min-width: 1280px) {
+
+.public-outcry__container {
+      padding-top: 120px;
+      margin-left: 20px;
+      padding-left: calc(68% - 1140px)
+  }
+  }
 
 .public-outcry__section {
-      margin-top: 90px;
-      padding-top: 70px
+    background-color: var(--main-red);
+    margin: 40px auto 0 auto;
+    padding-top: 35px;
+    overflow: hidden;
+    max-width: 1000px;
+  }
+
+@media (min-width: 1280px) {
+
+.public-outcry__section {
+      background-color: white;
+      margin: 0;
+      padding-top: 0;
+      display: none
+  }
+  }
+
+@media (min-height: 900px) {
+
+.public-outcry__section {
+      display: block
   }
   }
 
@@ -1184,6 +1253,16 @@ img {
     display: block;
     width: 170%;
     max-width: 1000px;
+    margin: 0 auto;
+  }
+
+@media (min-width: 1280px) {
+
+.public-outcry__image {
+      position: absolute;
+      bottom: 0px;
+      left: 66%
+  }
   }
 
 .final-battle {
@@ -1245,7 +1324,8 @@ img {
       width: 720px;
       max-width: 51%;
       max-height: 300px;
-      border-left: 30px solid var(--main-red)
+      border-left: 30px solid var(--main-red);
+      box-shadow: 7px 7px 1px 6px var(--main-orange)
   }
   }
 

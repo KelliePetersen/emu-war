@@ -46,6 +46,7 @@
       font-size: 20px;
     }
   }
+  
   &--big-at-large {
     @mixin atLarge {
       font-size: 1.5rem;

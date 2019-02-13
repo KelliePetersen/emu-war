@@ -4,9 +4,16 @@
   position: relative;
 
   &__card-container {
-    position: relative;
+    position: absolute;
     width: 768px;
     max-width: 100%;
+    margin: 0 auto;
+
+    @mixin atLarge {
+      bottom: 5%;
+      right: 5%;
+      max-width: 50%;
+    }
   }
 
   &__card {
@@ -21,12 +28,13 @@
 
   &__card:nth-child(1) {
     @mixin atMedium {
-      margin-left: 30%;
+      margin-left: auto;
     }
   }
   &__card:nth-child(2) {
     @mixin atMedium {
-      margin-left: 15%;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
@@ -47,12 +55,25 @@
       margin-top: 150px;
       padding: 30px 50px;
     }
+    @mixin atLarge {
+      position: absolute;
+      bottom: 10px;
+      max-width: 570px;
+      padding: 0 0 0 30px;
+    }
   }
 
   &__image {
     display: block;
     width: 95%;
     max-width: 565px;
+
+    @mixin atLarge {
+      position: absolute;
+      bottom: 0px;
+      max-height: 80%;
+      width: auto;
+    }
   }
 
   &__quote {

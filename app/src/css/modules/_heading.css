@@ -72,4 +72,10 @@
       margin: 0;
     }
   }
+
+  &--center-at-large {
+    position: absolute;
+    left: 30%;
+    top: 80px;
+  }
 }
