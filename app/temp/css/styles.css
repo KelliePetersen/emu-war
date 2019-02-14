@@ -414,6 +414,17 @@ img {
 }
   }
 
+.hidden-at-medium {
+  display: none;
+}
+
+@media (min-width: 1280px) {
+
+.hidden-at-medium {
+    display: block
+}
+  }
+
 .heading {
   font-family: 'NIGHTMARE PILLS';
   font-size: 36px;
@@ -514,10 +525,15 @@ img {
   }
   }
 
+@media (min-width: 1280px) {
+
 .heading--center-at-large {
     position: absolute;
-    left: 30%;
-    top: 80px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: 40px
+  }
   }
 
 .paragraph {
@@ -632,6 +648,10 @@ img {
       margin-left: 18%;
       margin-top: 10px
   }
+  }
+
+.paragraph--small-at-large {
+    font-size: 18px;
   }
 
 .nav__background {
@@ -976,7 +996,7 @@ img {
 @media (min-width: 1280px) {
 
 .intro__link {
-      display: block
+      display: inline-block
   }
   }
 
@@ -991,6 +1011,7 @@ img {
 
 .cause-of-war {
     background-image: linear-gradient(to right, var(--main-orange) 0.5%, white 0.5%, white 33%, var(--main-black) 33%);
+    z-index: 0;
     padding-top: 0
 }
   }
@@ -999,7 +1020,7 @@ img {
 
 .cause-of-war__heading {
       position: absolute;
-      bottom: calc(40% + 260px);
+      bottom: calc(40% + 300px);
       left: 4%;
       z-index: 1
   }
@@ -1022,7 +1043,7 @@ img {
 .cause-of-war__image {
       position: absolute;
       bottom: 0px;
-      left: 55%;
+      right: calc(40% - 400px);
       max-height: 80%;
       z-index: -1
   }
@@ -1033,7 +1054,7 @@ img {
 .cause-of-war__white-section {
       position: absolute;
       left: 1%;
-      bottom: calc(40% - 50px);
+      bottom: calc(40% - 10px);
       background-color: white;
       width: 750px;
       max-width: 57%
@@ -1067,7 +1088,7 @@ img {
 .cause-of-war__section {
       padding: 0;
       max-width: 700px;
-      bottom: calc(40% - 320px);
+      bottom: calc(40% - 280px);
       left: 10%
   }
   }
@@ -1079,27 +1100,142 @@ img {
   }
   }
 
-.preparation__image {
-    display: block;
+.preparation {
+  position: relative;
+}
+
+@media (min-width: 1280px) {
+
+.preparation {
+    background-image: 
+      linear-gradient(to right, var(--main-red) 33%, rgba(255, 255, 255, 0) 33%), 
+      linear-gradient(to bottom, white 99.5%, var(--main-orange) 99.5%)
+}
+  }
+
+@media (min-width: 1280px) {
+
+.preparation__container {
+      position: relative;
+      top: calc(10% - 80px);
+      padding-top: 100px;
+      margin: 0 auto;
+      height: 800px;
+      width: 1200px
+  }
+  }
+
+.preparation__figure {
+    position: relative;
+    margin: 0;
   }
 
 @media (min-width: 720px) {
 
+.preparation__figure {
+      display: inline-block;
+      width: 49.5%
+  }
+  }
+
+.preparation__caption {
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: 1;
+    background-color: var(--main-red);
+    padding: 10px;
+    width: 270px;
+    font-size: .85rem;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+  }
+
+@media (min-width: 1280px) {
+
+.preparation__caption {
+      background-color: var(--main-black)
+  }
+  }
+
+.preparation__gunners-mobile {
+    display: block;
+    margin: 20px auto 50px auto;
+  }
+
+@media (min-width: 720px) {
+
+.preparation__gunners-mobile {
+      display: none
+  }
+  }
+
+.preparation__gunners-image {
+    width: 640px;
+  }
+
 .preparation__image {
-      display: inline;
-      width: 49%;
-      margin-top: 50px
+    display: block;
+  }
+
+@media (min-width: 1280px) {
+
+.preparation__gunners {
+      position: absolute;
+      left: 54%;
+      bottom: 42px;
+      width: 450px
+  }
+  }
+
+@media (min-width: 1280px) {
+
+.preparation__ambush {
+      position: absolute;
+      left: 5%;
+      bottom: -20px;
+      width: 570px
+  }
+  }
+
+.preparation__george {
+    margin: 0;
+    position: absolute;
+    top: 85px;
+    width: 345px;
+    z-index: 1;
+  }
+
+.preparation__text {
+    margin-bottom: 50px;
+  }
+
+@media (min-width: 1280px) {
+
+.preparation__text {
+      margin: 0 0 0 35%
   }
   }
 
 .skirmishes {
   background-color: var(--main-black);
-  padding-top: 30px;
+  padding-top: 40px;
   position: relative;
+  overflow: hidden;
 }
 
+.skirmishes__container {
+    position: relative;
+    max-width: 1920px;
+    height: 100%;
+    margin: 0 auto;
+  }
+
 .skirmishes__card-container {
-    position: absolute;
+    position: relative;
     width: 768px;
     max-width: 100%;
     margin: 0 auto;
@@ -1108,8 +1244,9 @@ img {
 @media (min-width: 1280px) {
 
 .skirmishes__card-container {
-      bottom: 5%;
-      right: 5%;
+      position: absolute;
+      bottom: calc(55% - 400px);
+      right: calc(25% - 330px);
       max-width: 50%
   }
   }
@@ -1119,6 +1256,7 @@ img {
 .skirmishes__card {
       background-color: white;
       padding-bottom: 10px;
+      padding-top: 10px;
       width: 550px;
       margin-bottom: -15px;
       box-shadow: 1px 1px 10px black
@@ -1142,6 +1280,8 @@ img {
 
 .skirmishes__text {
     color: #D9D9D9;
+    margin-left: 30px;
+    margin-bottom: 20px;
   }
 
 @media (min-width: 720px) {
@@ -1170,9 +1310,11 @@ img {
 
 .skirmishes__section {
       position: absolute;
-      bottom: 10px;
-      max-width: 570px;
-      padding: 0 0 0 30px
+      bottom: calc(75% - 650px);
+      left: calc(25% - 300px);
+      max-width: 530px;
+      padding: 0 0 0 40px;
+      z-index: 1
   }
   }
 
@@ -1187,7 +1329,8 @@ img {
 .skirmishes__image {
       position: absolute;
       bottom: 0px;
-      max-height: 80%;
+      left: calc(20% - 400px);
+      max-height: 95%;
       width: auto
   }
   }
@@ -1202,6 +1345,17 @@ img {
 .skirmishes__quote {
       left: 250px;
       bottom: 200px
+  }
+  }
+
+@media (min-width: 1280px) {
+
+.skirmishes__quote {
+      width: 480px;
+      max-width: 30%;
+      bottom: 450px;
+      left: calc(35% - 130px);
+      z-index: 1
   }
   }
 
@@ -1220,7 +1374,7 @@ img {
 @media (min-width: 1280px) {
 
 .public-outcry__container {
-      padding-top: 120px;
+      padding-top: 80px;
       margin-left: 20px;
       padding-left: calc(68% - 1140px)
   }
@@ -1239,15 +1393,8 @@ img {
 .public-outcry__section {
       background-color: white;
       margin: 0;
-      padding-top: 0;
-      display: none
-  }
-  }
-
-@media (min-height: 900px) {
-
-.public-outcry__section {
-      display: block
+      margin-top: calc(5% - 100px);
+      padding-top: 0
   }
   }
 
@@ -1285,9 +1432,9 @@ img {
 @media (min-width: 1280px) {
 
 .final-battle__container {
-      padding-top: 80px;
-      margin-left: 20px;
-      padding-left: calc(68% - 1140px);
+      padding-top: 60px;
+      margin-left: 50px;
+      padding-left: calc(68% - 1170px);
       box-sizing: content-box;
       max-width: 46%
   }
@@ -1307,8 +1454,7 @@ img {
 @media (min-width: 1280px) {
 
 .final-battle__quote {
-      width: 530px;
-      padding: 4% 0
+      width: 530px
   }
   }
 
@@ -1324,9 +1470,9 @@ img {
       right: calc(35% - 450px);
       top: calc(15% + 80px);
       width: 720px;
-      max-width: 51%;
+      max-width: 48%;
       max-height: 300px;
-      border-left: 30px solid var(--main-red);
+      border-left: 10px solid var(--main-red);
       box-shadow: 7px 7px 1px 6px var(--main-orange)
   }
   }
@@ -1340,7 +1486,7 @@ img {
 
 .final-battle__image {
       position: absolute;
-      right: calc(35% - 250px);
+      right: calc(40% - 350px);
       bottom: calc(45% - 350px);
       max-width: 40%;
       max-height: 40%;
@@ -1356,7 +1502,8 @@ img {
 @media (min-width: 1280px) {
 
 .aftermath {
-    background-image: linear-gradient(to right, var(--main-red) 10%, white 10%)
+    background-image: linear-gradient(to right, var(--main-red) 10%, white 10%);
+    height: calc(100vh - 35px)
 }
   }
 
@@ -1364,7 +1511,7 @@ img {
 
 .aftermath__container {
       background-color: white;
-      padding-top: 160px;
+      padding-top: 100px;
       margin-left: calc(45% - 550px);
       border: 10px solid white
   }
@@ -1390,15 +1537,7 @@ img {
       width: 450px;
       margin: 0;
       bottom: 5%;
-      left: calc(40% - 300px);
-      display: none
-  }
-  }
-
-@media (min-height: 900px) {
-
-.aftermath__quote {
-      display: block
+      left: calc(40% - 300px)
   }
   }
 
@@ -1423,7 +1562,7 @@ img {
       bottom: 0px;
       left: 55%;
       margin: 0;
-      max-height: 85%
+      max-height: 90%
   }
   }
 

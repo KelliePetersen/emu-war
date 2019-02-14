@@ -6,13 +6,14 @@
 
   @mixin atLarge {
     background-image: linear-gradient(to right, var(--main-orange) 0.5%, white 0.5%, white 33%, var(--main-black) 33%);
+    z-index: 0;
     padding-top: 0;
   }
 
   &__heading {
     @mixin atLarge {
       position: absolute;
-      bottom: calc(40% + 260px);
+      bottom: calc(40% + 300px);
       left: 4%;
       z-index: 1;
     }
@@ -28,7 +29,7 @@
     @mixin atLarge {
       position: absolute;
       bottom: 0px;
-      left: 55%;
+      right: calc(40% - 400px);
       max-height: 80%;
       z-index: -1;
     }
@@ -38,7 +39,7 @@
     @mixin atLarge {
       position: absolute;
       left: 1%;
-      bottom: calc(40% - 50px);
+      bottom: calc(40% - 10px);
       background-color: white;
       width: 750px;
       max-width: 57%;
@@ -63,7 +64,7 @@
     @mixin atLarge {
       padding: 0;
       max-width: 700px;
-      bottom: calc(40% - 320px);
+      bottom: calc(40% - 280px);
       left: 10%;
     }
 

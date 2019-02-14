@@ -1,17 +1,26 @@
 .skirmishes {
   background-color: var(--main-black);
-  padding-top: 30px;
+  padding-top: 40px;
   position: relative;
+  overflow: hidden;
+
+  &__container {
+    position: relative;
+    max-width: 1920px;
+    height: 100%;
+    margin: 0 auto;
+  }
 
   &__card-container {
-    position: absolute;
+    position: relative;
     width: 768px;
     max-width: 100%;
     margin: 0 auto;
 
     @mixin atLarge {
-      bottom: 5%;
-      right: 5%;
+      position: absolute;
+      bottom: calc(55% - 400px);
+      right: calc(25% - 330px);
       max-width: 50%;
     }
   }
@@ -20,6 +29,7 @@
     @mixin atMedium {
       background-color: white;
       padding-bottom: 10px;
+      padding-top: 10px;
       width: 550px;
       margin-bottom: -15px;
       box-shadow: 1px 1px 10px black;
@@ -40,6 +50,8 @@
 
   &__text {
     color: #D9D9D9;
+    margin-left: 30px;
+    margin-bottom: 20px;
 
     @mixin atMedium {
       color: #393939;
@@ -57,9 +69,11 @@
     }
     @mixin atLarge {
       position: absolute;
-      bottom: 10px;
-      max-width: 570px;
-      padding: 0 0 0 30px;
+      bottom: calc(75% - 650px);
+      left: calc(25% - 300px);
+      max-width: 530px;
+      padding: 0 0 0 40px;
+      z-index: 1;
     }
   }
 
@@ -71,7 +85,8 @@
     @mixin atLarge {
       position: absolute;
       bottom: 0px;
-      max-height: 80%;
+      left: calc(20% - 400px);
+      max-height: 95%;
       width: auto;
     }
   }
@@ -83,6 +98,14 @@
     @mixin atMedium {
       left: 250px;
       bottom: 200px;
+    }
+
+    @mixin atLarge {
+      width: 480px;
+      max-width: 30%;
+      bottom: 450px;
+      left: calc(35% - 130px);
+      z-index: 1;
     }
   }
 }

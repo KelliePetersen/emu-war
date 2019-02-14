@@ -1,12 +1,96 @@
 .preparation {
+  position: relative;
 
+  @mixin atLarge {
+    background-image: 
+      linear-gradient(to right, var(--main-red) 33%, rgba(255, 255, 255, 0) 33%), 
+      linear-gradient(to bottom, white 99.5%, var(--main-orange) 99.5%);
+  }
+
+  &__container {
+    @mixin atLarge {
+      position: relative;
+      top: calc(10% - 80px);
+      padding-top: 100px;
+      margin: 0 auto;
+      height: 800px;
+      width: 1200px;
+    }
+  }
+
+  &__figure {
+    position: relative;
+    margin: 0;
+    @mixin atMedium {
+      display: inline-block;
+      width: 49.5%;
+    }
+  }
+
+  &__caption {
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    background-color: var(--main-red);
+    padding: 10px;
+    width: 270px;
+    font-size: .85rem;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    @mixin atLarge {
+      background-color: var(--main-black);
+    }
+  }
+
+  &__gunners-mobile {
+    display: block;
+    margin: 20px auto 50px auto;
+    @mixin atMedium {
+      display: none;
+    }
+  }
+
+  &__gunners-image {
+    width: 640px;
+  }
+  
   &__image {
     display: block;
+  }
 
-    @mixin atMedium {
-      display: inline;
-      width: 49%;
-      margin-top: 50px;
+  &__gunners {
+    @mixin atLarge {
+      position: absolute;
+      left: 54%;
+      bottom: 42px;
+      width: 450px;
+    }
+  }
+  
+  &__ambush {
+    @mixin atLarge {
+      position: absolute;
+      left: 5%;
+      bottom: -20px;
+      width: 570px;
+    }
+  }
+
+  &__george {
+    margin: 0;
+    position: absolute;
+    top: 85px;
+    width: 345px;
+    z-index: 1;
+  }
+
+  &__text {
+    margin-bottom: 50px;
+    @mixin atLarge {
+      margin: 0 0 0 35%;
     }
   }
 }

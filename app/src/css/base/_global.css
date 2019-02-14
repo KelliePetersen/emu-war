@@ -21,8 +21,14 @@ img {
 
 .hidden-at-small {
   display: none;
-
   @mixin atMedium {
+    display: block;
+  }
+}
+
+.hidden-at-medium {
+  display: none;
+  @mixin atLarge {
     display: block;
   }
 }

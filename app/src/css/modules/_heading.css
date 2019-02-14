@@ -74,8 +74,11 @@
   }
 
   &--center-at-large {
+    @mixin atLarge {
     position: absolute;
-    left: 30%;
-    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40px;
+  }
   }
 }

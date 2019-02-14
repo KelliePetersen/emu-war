@@ -8,7 +8,7 @@
 
   &__container {
     @mixin atLarge {
-      padding-top: 120px;
+      padding-top: 80px;
       margin-left: 20px;
       padding-left: calc(68% - 1140px);
     }
@@ -24,12 +24,8 @@
     @mixin atLarge {
       background-color: white;
       margin: 0;
+      margin-top: calc(5% - 100px);
       padding-top: 0;
-      display: none;
-    }
-
-    @mixin atTall {
-      display: block;
     }
   }
 

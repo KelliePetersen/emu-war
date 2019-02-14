@@ -89,4 +89,7 @@
       margin-top: 10px;
     }
   }
+  &--small-at-large {
+    font-size: 18px;
+  }
 }

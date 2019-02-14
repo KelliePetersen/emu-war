@@ -38,7 +38,7 @@
     color: #7B4949;
 
     @mixin atLarge {
-      display: block;
+      display: inline-block;
     }
   }
 }

@@ -11,9 +11,9 @@
 
   &__container {
     @mixin atLarge {
-      padding-top: 80px;
-      margin-left: 20px;
-      padding-left: calc(68% - 1140px);
+      padding-top: 60px;
+      margin-left: 50px;
+      padding-left: calc(68% - 1170px);
       box-sizing: content-box;
       max-width: 46%;
     }
@@ -26,7 +26,6 @@
     }
     @mixin atLarge {
       width: 530px;
-      padding: 4% 0;
     }
   }
 
@@ -39,9 +38,9 @@
       right: calc(35% - 450px);
       top: calc(15% + 80px);
       width: 720px;
-      max-width: 51%;
+      max-width: 48%;
       max-height: 300px;
-      border-left: 30px solid var(--main-red);
+      border-left: 10px solid var(--main-red);
       box-shadow: 7px 7px 1px 6px var(--main-orange);
     }
   }
@@ -52,7 +51,7 @@
 
     @mixin atLarge {
       position: absolute;
-      right: calc(35% - 250px);
+      right: calc(40% - 350px);
       bottom: calc(45% - 350px);
       max-width: 40%;
       max-height: 40%;
