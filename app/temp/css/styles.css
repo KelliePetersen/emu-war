@@ -398,8 +398,8 @@ img {
 @media (min-width: 1280px) {
 
 .fullscreen-at-large {
-    min-height: 800px;
-    height: 103vh
+    min-height: 900px;
+    height: 100vh
 }
   }
 
@@ -639,7 +639,7 @@ img {
     position: fixed;
     top: 0px;
     width: 100%;
-    height: 80px;
+    height: 70px;
     background-color: #252525;
     z-index: 3;
   }
@@ -677,18 +677,18 @@ img {
 .nav__home {
     height: 35px;
     position: fixed;
-    top: 20px;
+    top: 15px;
     left: 20px;
   }
 
 .nav__list {
     display: none;
     margin: 0;
-    padding: 30px 20px;
+    padding: 25px 20px;
     list-style-type: none;
     position: fixed;
     z-index: 5;
-    font-size: 18px;
+    font-size: 16px;
     width: 100%;
     text-align: right;
   }
@@ -708,7 +708,7 @@ img {
 .nav__link {
     text-decoration: none;
     color: #DDD;
-    font-weight: 500;
+    font-weight: 400;
   }
 
 .nav__link:hover {
@@ -727,26 +727,25 @@ img {
 
 .hero__container {
     position: relative;
-    min-height: 500px;
     width: 100%;
     max-width: 1580px;
-    height: 100vh;
+    height: 100%;
     margin: 0 auto;
   }
 
 .hero__text {
     position: absolute;
     text-align: center;
-    width: 90%;
-    max-width: 700px;
+    width: 96%;
+    max-width: 750px;
     top: 50px;
-    left: 5%;
+    left: 2%;
   }
 
 @media (min-width: 720px) {
 
 .hero__text {
-      top: 150px;
+      top: 15%;
       margin-left: calc(45% - 350px)
   }
   }
@@ -769,12 +768,14 @@ img {
     color: var(--heading-red);
     font-size: 148px;
     line-height: 110px;
+    display: block;
   }
 
 @media (min-width: 720px) {
 
 .hero__heading__main {
-      margin: 0
+      display: inline;
+      margin-left: 15px
   }
   }
 
@@ -828,7 +829,7 @@ img {
     font-size: 1.25rem;
     position: absolute;
     bottom: 30px;
-    left: 6%;
+    left: 9%;
     color: #757575;
   }
 
@@ -842,7 +843,7 @@ img {
 @media (min-width: 1280px) {
 
 .hero__date {
-      left: 1%
+      left: 4%
   }
   }
 
@@ -925,6 +926,7 @@ img {
 
 .intro {
   position: relative;
+  min-height: 800px;
 }
 
 .intro__container {
@@ -1034,7 +1036,7 @@ img {
       bottom: calc(40% - 50px);
       background-color: white;
       width: 750px;
-      max-width: 750px
+      max-width: 57%
   }
   }
 

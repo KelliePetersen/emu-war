@@ -9,23 +9,22 @@
 
   &__container {
     position: relative;
-    min-height: 500px;
     width: 100%;
     max-width: 1580px;
-    height: 100vh;
+    height: 100%;
     margin: 0 auto;
   }
 
   &__text {
     position: absolute;
     text-align: center;
-    width: 90%;
-    max-width: 700px;
+    width: 96%;
+    max-width: 750px;
     top: 50px;
-    left: 5%;
+    left: 2%;
 
     @mixin atMedium {
-      top: 150px;
+      top: 15%;
       margin-left: calc(45% - 350px);
     }
 
@@ -45,9 +44,11 @@
     color: var(--heading-red);
     font-size: 148px;
     line-height: 110px;
+    display: block;
 
     @mixin atMedium {
-      margin: 0;
+      display: inline;
+      margin-left: 15px;
     }
     @mixin atLarge {
       font-size: 164px;
@@ -88,7 +89,7 @@
     font-size: 1.25rem;
     position: absolute;
     bottom: 30px;
-    left: 6%;
+    left: 9%;
     color: #757575;
 
     @mixin atMedium {
@@ -96,7 +97,7 @@
     }
 
     @mixin atLarge {
-      left: 1%;
+      left: 4%;
     }
   }
 

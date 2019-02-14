@@ -1,5 +1,6 @@
 .intro {
   position: relative;
+  min-height: 800px;
 
   &__container {
     max-width: 1450px;

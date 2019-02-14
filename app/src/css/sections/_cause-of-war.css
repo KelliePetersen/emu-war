@@ -41,7 +41,7 @@
       bottom: calc(40% - 50px);
       background-color: white;
       width: 750px;
-      max-width: 750px;
+      max-width: 57%;
     }
 
     @mixin atUltra {
