@@ -3,6 +3,10 @@ body {
   color: #333;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 img {
   max-width: 100%;
   max-height: auto;

@@ -42,7 +42,7 @@
   &__heading__main {
     font-family: 'NIGHTMARE PILLS';
     color: var(--heading-red);
-    font-size: 148px;
+    font-size: 143px;
     line-height: 110px;
     display: block;
 
@@ -89,7 +89,7 @@
     font-size: 1.25rem;
     position: absolute;
     bottom: 30px;
-    left: 9%;
+    left: 10%;
     color: #757575;
 
     @mixin atMedium {

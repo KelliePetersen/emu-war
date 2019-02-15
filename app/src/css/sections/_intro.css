@@ -40,5 +40,9 @@
     @mixin atLarge {
       display: inline-block;
     }
+
+    &:hover {
+      color: var(--main-orange);
+    }
   }
 }

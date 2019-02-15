@@ -33,3 +33,9 @@
     @mixin-content;
   }
 }
+
+@define-mixin atFullscreen {
+  @media (min-height: 900px) and (min-width: 1500px) {
+    @mixin-content;
+  }
+}

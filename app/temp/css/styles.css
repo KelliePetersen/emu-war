@@ -386,6 +386,10 @@ body {
   color: #333;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 img {
   max-width: 100%;
   max-height: auto;
@@ -825,6 +829,58 @@ img {
       color: #A24D4D;
     }
 
+.nav__active-link {
+    color: var(--main-red);
+  }
+
+.nav__arrow {
+    display: none;
+  }
+
+@media (min-height: 900px) and (min-width: 1500px) {
+
+.nav__arrow {
+      display: block;
+      z-index: 5;
+      width: 65px;
+      height: 60px;
+      border-radius: 5px;
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%)
+  }
+  }
+
+.nav__arrow:hover > .nav__arrow-part {
+      background-color: var(--main-red);
+    }
+
+.nav__arrow-part {
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 30px;
+    background-color: #D8D8D8;
+  }
+
+.nav__arrow-dark {
+    background-color: var(--main-black);
+  }
+
+.nav__arrow-left {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+
+.nav__arrow-right {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    left: 26px;
+  }
+
 .hero {
   position: relative;
   width: 100%;
@@ -876,7 +932,7 @@ img {
 .hero__heading__main {
     font-family: 'NIGHTMARE PILLS';
     color: var(--heading-red);
-    font-size: 148px;
+    font-size: 143px;
     line-height: 110px;
     display: block;
   }
@@ -939,7 +995,7 @@ img {
     font-size: 1.25rem;
     position: absolute;
     bottom: 30px;
-    left: 9%;
+    left: 10%;
     color: #757575;
   }
 
@@ -1089,6 +1145,10 @@ img {
       display: inline-block
   }
   }
+
+.intro__link:hover {
+      color: var(--main-orange);
+    }
 
 .cause-of-war {
   background-color: var(--main-black);
@@ -1370,7 +1430,7 @@ img {
 
 .skirmishes__text {
     color: #D9D9D9;
-    margin-left: 30px;
+    margin-left: 5%;
     margin-bottom: 20px;
   }
 
