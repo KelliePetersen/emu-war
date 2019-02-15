@@ -2,7 +2,7 @@ import waypoints from 'waypoints/lib/noframework.waypoints';
 
 class DynamicNav {
   constructor() {
-    // this.lazyImages = $('.lazyload');
+    // this.lazyImages = document.getElementsByClassName('lazyload');
     this.pageSections = document.getElementsByClassName('section');
     this.links = document.getElementsByClassName('nav__link');
     this.createWaypoints();
@@ -30,8 +30,10 @@ class DynamicNav {
               mainThis.links[j].classList.remove('nav__active-link');
             }
 
-            let currentLink = document.querySelector(matchingLink);
-            currentLink.classList.add('nav__active-link');
+            if (matchingLink != '#fake') {
+              let currentLink = document.querySelector(matchingLink);
+              currentLink.classList.add('nav__active-link');
+            }
           }
         },
         offset: '20%'
@@ -46,8 +48,10 @@ class DynamicNav {
               mainThis.links[j].classList.remove("nav__active-link");
             }
 
-            let currentLink = document.querySelector(matchingLink);
-            currentLink.classList.add('nav__active-link');
+            if (matchingLink != '#fake') {
+              let currentLink = document.querySelector(matchingLink);
+              currentLink.classList.add('nav__active-link');
+            }
           }
         },
         offset: '-40%'
