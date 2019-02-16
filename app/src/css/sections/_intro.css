@@ -2,6 +2,10 @@
   position: relative;
   min-height: 800px;
 
+  @mixin atLarge {
+    overflow: hidden;
+  }
+
   &__container {
     max-width: 1450px;
     @mixin atLarge {

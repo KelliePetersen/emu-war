@@ -33,7 +33,7 @@
     display: block;
     width: 170%;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: -5px auto;
 
     @mixin atLarge {
       position: absolute;

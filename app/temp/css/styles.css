@@ -678,8 +678,8 @@ img {
 .nav__button {
     cursor: pointer;
     position: fixed;
-    top: 40px;
-    right: 40px;
+    top: 3%;
+    right: 5%;
     z-index: 6;
     width: 50px;
     height: 30px;
@@ -747,17 +747,28 @@ img {
 
 .nav__home {
     height: 35px;
-    display: block;
     margin: 20px auto;
   }
 
 @media (min-width: 1280px) {
 
 .nav__home {
+      visibility: visible;
       margin: 0;
       position: absolute;
       top: 15px;
       left: 20px
+  }
+  }
+
+.nav__home-link {
+    visibility: hidden;
+  }
+
+@media (min-width: 1280px) {
+
+.nav__home-link {
+      visibility: visible
   }
   }
 
@@ -820,6 +831,7 @@ img {
   }
 
 .nav__link {
+    visibility: hidden;
     text-decoration: none;
     color: #DDD;
     font-weight: 400;
@@ -828,6 +840,17 @@ img {
 .nav__link:hover {
       color: #A24D4D;
     }
+
+@media (min-width: 1280px) {
+
+.nav__link {
+      visibility: visible
+  }
+  }
+
+.nav__link--visible {
+    visibility: visible;
+  }
 
 .nav__active-link {
     color: var(--main-red);
@@ -879,6 +902,38 @@ img {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
     left: 26px;
+  }
+
+.nav__back-to-top {
+    position: fixed;
+    bottom: 3%;
+    right: 5%;
+    background-color: var(--main-black);
+    z-index: 6;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    padding-top: 8px;
+  }
+
+.nav__back-to-top:hover {
+      background-color: var(--main-red);
+    }
+
+@media (min-width: 1280px) {
+
+.nav__back-to-top {
+      display: none
+  }
+  }
+
+.nav__back-to-top--hidden {
+    display: none;
   }
 
 .hero {
@@ -1094,6 +1149,13 @@ img {
   position: relative;
   min-height: 800px;
 }
+
+@media (min-width: 1280px) {
+
+.intro {
+    overflow: hidden
+}
+  }
 
 .intro__container {
     max-width: 1450px;
@@ -1553,7 +1615,7 @@ img {
     display: block;
     width: 170%;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: -5px auto;
   }
 
 @media (min-width: 1280px) {
