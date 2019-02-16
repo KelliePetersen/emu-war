@@ -404,7 +404,8 @@ img {
 
 .fullscreen-at-large {
     min-height: 900px;
-    height: 100vh
+    height: 100vh;
+    max-height: 1200px
 }
   }
 
@@ -1531,7 +1532,7 @@ html.sr .hero__text, html.sr .hero__tribute, html.sr .hero__quote {
 
 .skirmishes__section {
       position: absolute;
-      bottom: calc(75% - 620px);
+      bottom: calc(25% - 150px);
       left: calc(25% - 300px);
       max-width: 530px;
       padding: 0 0 0 40px;
@@ -1550,11 +1551,18 @@ html.sr .hero__text, html.sr .hero__tribute, html.sr .hero__quote {
 .skirmishes__image {
       position: absolute;
       bottom: 0px;
-      left: calc(20% - 400px);
+      left: 50px;
       max-height: 95%;
       width: auto
   }
   }
+
+@media (min-width: 1500px) {
+
+.skirmishes__image {
+      left: calc(20% - 400px)
+  }
+    }
 
 .skirmishes__quote {
     position: absolute;
@@ -1572,6 +1580,7 @@ html.sr .hero__text, html.sr .hero__tribute, html.sr .hero__quote {
 @media (min-width: 1280px) {
 
 .skirmishes__quote {
+      display: none;
       width: 480px;
       max-width: 30%;
       bottom: 450px;
@@ -1579,6 +1588,13 @@ html.sr .hero__text, html.sr .hero__tribute, html.sr .hero__quote {
       z-index: 1
   }
   }
+
+@media (min-width: 1500px) {
+
+.skirmishes__quote {
+      display: block
+  }
+    }
 
 .public-outcry {
   overflow: hidden;

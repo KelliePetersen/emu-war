@@ -70,7 +70,7 @@
     }
     @mixin atLarge {
       position: absolute;
-      bottom: calc(75% - 620px);
+      bottom: calc(25% - 150px);
       left: calc(25% - 300px);
       max-width: 530px;
       padding: 0 0 0 40px;
@@ -86,9 +86,13 @@
     @mixin atLarge {
       position: absolute;
       bottom: 0px;
-      left: calc(20% - 400px);
+      left: 50px;
       max-height: 95%;
       width: auto;
+    }
+
+    @media (min-width: 1500px) {
+      left: calc(20% - 400px);
     }
   }
 
@@ -102,11 +106,16 @@
     }
 
     @mixin atLarge {
+      display: none;
       width: 480px;
       max-width: 30%;
       bottom: 450px;
       left: calc(35% - 130px);
       z-index: 1;
+    }
+
+    @media (min-width: 1500px) {
+      display: block;
     }
   }
 }
