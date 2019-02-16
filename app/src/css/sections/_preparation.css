@@ -4,7 +4,7 @@
   @mixin atLarge {
     background-image: 
       linear-gradient(to right, var(--main-red) 33%, rgba(255, 255, 255, 0) 33%), 
-      linear-gradient(to bottom, white 99.5%, var(--main-orange) 99.5%);
+      linear-gradient(to bottom, whitesmoke 99.5%, var(--main-orange) 99.5%);
   }
 
   &__container {

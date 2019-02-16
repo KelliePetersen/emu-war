@@ -3,16 +3,16 @@
   overflow: hidden;
 
   @mixin atLarge {
-    background-image: linear-gradient(to right, var(--main-red) 10%, white 10%);
+    background-image: linear-gradient(to right, var(--main-red) calc(35% - 450px), whitesmoke calc(35% - 450px));
     height: calc(100vh - 35px);
   }
 
   &__container {
     @mixin atLarge {
-      background-color: white;
+      background-color: whitesmoke;
       padding-top: 100px;
       margin-left: calc(45% - 550px);
-      border: 10px solid white;
+      border: 10px solid whitesmoke;
     }
   }
 

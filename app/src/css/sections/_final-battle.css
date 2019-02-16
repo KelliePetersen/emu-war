@@ -6,7 +6,7 @@
 
   @mixin atLarge {
     padding: 0;
-    background-image: linear-gradient(to right, var(--main-black) 66%, white 66%);
+    background-image: linear-gradient(to right, var(--main-black) 66%, whitesmoke 66%);
   }
 
   &__container {

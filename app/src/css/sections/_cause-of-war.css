@@ -5,7 +5,7 @@
   padding-top: 50px;
 
   @mixin atLarge {
-    background-image: linear-gradient(to right, var(--main-orange) 0.5%, white 0.5%, white 33%, var(--main-black) 33%);
+    background-image: linear-gradient(to right, var(--main-orange) 0.5%, whitesmoke 0.5%, whitesmoke 33%, var(--main-black) 33%);
     z-index: 0;
     padding-top: 0;
   }
@@ -40,7 +40,7 @@
       position: absolute;
       left: 1%;
       bottom: calc(40% - 10px);
-      background-color: white;
+      background-color: whitesmoke;
       width: 750px;
       max-width: 57%;
     }

@@ -15,11 +15,9 @@ const options = {
 
 let sr = ScrollReveal(options);
 
-if (document.documentElement.clientWidth > 719) {
-  sr.reveal(".hero__text", { distance: "10px" });
-  sr.reveal(".hero__quote", { distance: "10px", delay: 1500 });
-  sr.reveal(".hero__tribute", { distance: "10px", delay: 1500 });
-}
+sr.reveal(".hero__text", { distance: "10px" });
+sr.reveal(".hero__quote", { distance: "10px", delay: 1500 });
+sr.reveal(".hero__tribute", { distance: "10px", delay: 1500 });
 
 if (document.documentElement.clientWidth > 1279 && document.documentElement.clientHeight > 800) {
   sr.reveal(".intro__image", {

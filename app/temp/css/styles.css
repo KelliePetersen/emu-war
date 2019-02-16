@@ -384,6 +384,7 @@ template {
 body {
   font-family: 'Roboto', sans-serif;
   color: #333;
+  background-color: whitesmoke;
 }
 
 html {
@@ -864,7 +865,7 @@ img {
 
 .nav__arrow {
       display: block;
-      z-index: 5;
+      z-index: 1;
       width: 65px;
       height: 60px;
       border-radius: 5px;
@@ -936,9 +937,12 @@ img {
     display: none;
   }
 
+@media (min-width: 720px) {
+
 html.sr .hero__text, html.sr .hero__tribute, html.sr .hero__quote {
-  visibility: hidden;
+    visibility: hidden
 }
+  }
 
 .hero {
   position: relative;
@@ -946,7 +950,7 @@ html.sr .hero__text, html.sr .hero__tribute, html.sr .hero__quote {
   height: 100vh;
   min-height: 500px;
   background-color: #222;
-  background-image: url(/src/img/texture.png);
+  background-image: url(/src/img/texture.jpg);
   z-index: 4;
 }
 
@@ -1226,7 +1230,7 @@ html.sr .hero__text, html.sr .hero__tribute, html.sr .hero__quote {
 @media (min-width: 1280px) {
 
 .cause-of-war {
-    background-image: linear-gradient(to right, var(--main-orange) 0.5%, white 0.5%, white 33%, var(--main-black) 33%);
+    background-image: linear-gradient(to right, var(--main-orange) 0.5%, whitesmoke 0.5%, whitesmoke 33%, var(--main-black) 33%);
     z-index: 0;
     padding-top: 0
 }
@@ -1271,7 +1275,7 @@ html.sr .hero__text, html.sr .hero__tribute, html.sr .hero__quote {
       position: absolute;
       left: 1%;
       bottom: calc(40% - 10px);
-      background-color: white;
+      background-color: whitesmoke;
       width: 750px;
       max-width: 57%
   }
@@ -1325,7 +1329,7 @@ html.sr .hero__text, html.sr .hero__tribute, html.sr .hero__quote {
 .preparation {
     background-image: 
       linear-gradient(to right, var(--main-red) 33%, rgba(255, 255, 255, 0) 33%), 
-      linear-gradient(to bottom, white 99.5%, var(--main-orange) 99.5%)
+      linear-gradient(to bottom, whitesmoke 99.5%, var(--main-orange) 99.5%)
 }
   }
 
@@ -1584,7 +1588,7 @@ html.sr .hero__text, html.sr .hero__tribute, html.sr .hero__quote {
 @media (min-width: 1280px) {
 
 .public-outcry {
-    background-image: linear-gradient(to right, white 66%, var(--main-red) 66%)
+    background-image: linear-gradient(to right, whitesmoke 66%, var(--main-red) 66%)
 }
   }
 
@@ -1593,7 +1597,7 @@ html.sr .hero__text, html.sr .hero__tribute, html.sr .hero__quote {
 .public-outcry__container {
       padding-top: 80px;
       margin-left: 20px;
-      padding-left: calc(68% - 1140px)
+      padding-left: calc(20% - 220px)
   }
   }
 
@@ -1602,29 +1606,44 @@ html.sr .hero__text, html.sr .hero__tribute, html.sr .hero__quote {
     margin: 40px auto 0 auto;
     padding-top: 35px;
     overflow: hidden;
-    max-width: 1000px;
+  }
+
+@media (min-width: 720px) {
+
+.public-outcry__section {
+      padding-bottom: 50px
+  }
   }
 
 @media (min-width: 1280px) {
 
 .public-outcry__section {
-      background-color: white;
+      max-width: 1000px;
+      background-color: whitesmoke;
       margin: 0;
       margin-top: calc(5% - 100px);
-      padding-top: 0
+      padding: 0
   }
   }
 
 .public-outcry__image {
     display: block;
-    width: 170%;
+    width: 100%;
     max-width: 1000px;
     margin: -5px auto;
+  }
+
+@media (min-width: 720px) {
+
+.public-outcry__image {
+      display: none
+  }
   }
 
 @media (min-width: 1280px) {
 
 .public-outcry__image {
+      display: block;
       position: absolute;
       bottom: 0px;
       left: 66%
@@ -1642,7 +1661,7 @@ html.sr .hero__text, html.sr .hero__tribute, html.sr .hero__quote {
 
 .final-battle {
     padding: 0;
-    background-image: linear-gradient(to right, var(--main-black) 66%, white 66%)
+    background-image: linear-gradient(to right, var(--main-black) 66%, whitesmoke 66%)
 }
   }
 
@@ -1719,7 +1738,7 @@ html.sr .hero__text, html.sr .hero__tribute, html.sr .hero__quote {
 @media (min-width: 1280px) {
 
 .aftermath {
-    background-image: linear-gradient(to right, var(--main-red) 10%, white 10%);
+    background-image: linear-gradient(to right, var(--main-red) calc(35% - 450px), whitesmoke calc(35% - 450px));
     height: calc(100vh - 35px)
 }
   }
@@ -1727,10 +1746,10 @@ html.sr .hero__text, html.sr .hero__tribute, html.sr .hero__quote {
 @media (min-width: 1280px) {
 
 .aftermath__container {
-      background-color: white;
+      background-color: whitesmoke;
       padding-top: 100px;
       margin-left: calc(45% - 550px);
-      border: 10px solid white
+      border: 10px solid whitesmoke
   }
   }
 

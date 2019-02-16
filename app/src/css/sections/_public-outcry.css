@@ -3,14 +3,14 @@
   position: relative;
 
   @mixin atLarge {
-    background-image: linear-gradient(to right, white 66%, var(--main-red) 66%);
+    background-image: linear-gradient(to right, whitesmoke 66%, var(--main-red) 66%);
   }
 
   &__container {
     @mixin atLarge {
       padding-top: 80px;
       margin-left: 20px;
-      padding-left: calc(68% - 1140px);
+      padding-left: calc(20% - 220px);
     }
   }
   
@@ -19,23 +19,32 @@
     margin: 40px auto 0 auto;
     padding-top: 35px;
     overflow: hidden;
-    max-width: 1000px;
+
+    @mixin atMedium {
+      padding-bottom: 50px;
+    }
     
     @mixin atLarge {
-      background-color: white;
+      max-width: 1000px;
+      background-color: whitesmoke;
       margin: 0;
       margin-top: calc(5% - 100px);
-      padding-top: 0;
+      padding: 0;
     }
   }
 
   &__image {
     display: block;
-    width: 170%;
+    width: 100%;
     max-width: 1000px;
     margin: -5px auto;
 
+    @mixin atMedium {
+      display: none;
+    }
+
     @mixin atLarge {
+      display: block;
       position: absolute;
       bottom: 0px;
       left: 66%;

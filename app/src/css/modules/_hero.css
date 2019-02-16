@@ -4,7 +4,7 @@
   height: 100vh;
   min-height: 500px;
   background-color: #222;
-  background-image: url(/src/img/texture.png);
+  background-image: url(/src/img/texture.jpg);
   z-index: 4;
 
   &__container {
