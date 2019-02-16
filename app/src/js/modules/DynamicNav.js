@@ -2,18 +2,10 @@ import waypoints from 'waypoints/lib/noframework.waypoints';
 
 class DynamicNav {
   constructor() {
-    // this.lazyImages = document.getElementsByClassName('lazyload');
     this.pageSections = document.getElementsByClassName('section');
     this.links = document.getElementsByClassName('nav__link');
     this.createWaypoints();
-    // this.refreshWaypoints();
   }
-
-  // refreshWaypoints() {
-  //   this.lazyImages.on('load', function () {
-  //     Waypoint.refreshAll();
-  //   });
-  // }
 
   createWaypoints() {
     let mainThis = this;
