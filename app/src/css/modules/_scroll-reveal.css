@@ -1,6 +1,4 @@
 
 html.sr .hero__text, html.sr .hero__tribute, html.sr .hero__quote {
-  @mixin atMedium {
-    visibility: hidden;
-  }
+  visibility: hidden;
 }
